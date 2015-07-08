@@ -1,0 +1,26 @@
+
+body{
+    font-family: sans-serif;
+    padding: 10%;
+}
+
+/*Pseudo-elements*/
+p:first-child:first-line{
+    color:royalblue;
+    font-size: 32px;
+}
+p:first-letter{
+    background:royalblue;
+    color:#fff;
+    padding: 10px 20px;
+    font-size: 100px;
+    float: left;
+    margin-right: 15px;
+}
+
+p:nth-child(2):first-letter{
+    font-family: 'Pacifico', cursive;
+}
+p{
+    overflow: hidden;
+}

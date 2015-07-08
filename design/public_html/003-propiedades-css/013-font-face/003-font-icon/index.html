@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @font-face{
+                font-family: "fontello";
+                src: url(font/fontello.ttf) format("truetype"),
+                    url(font/fontello.woff) format("woff"),
+                    url(font/fontello.eot) format("embedded-opentype"),
+                    url(font/fontello.svg) format("svg");
+            }
+            a{text-decoration: none;}
+            a.barco:before, a.tren:before, a.moto:before, a.phone:before{
+                font-family: "fontello";
+                content: "\E801";
+                color: tomato;
+                font-size: 5em;
+            }
+            a.barco:before{content: "\E801";}
+            a.tren:before{content: "\E804";}
+            a.moto:before{content: "\E805";}
+            a.phone:before{content: "\E809";}
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="centrado">
+                <a class="barco" href="#"></a>
+                <a class="tren" href="#"></a>
+                <a class="moto" href="#"></a>
+                <a class="phone" href="#"></a>
+            </div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url(http://weloveiconfonts.com/api/?family=entypo);
+
+            /* entypo */
+            [class*="entypo-"]:before {
+                font-family: 'entypo', sans-serif;
+            }
+            *{margin: 0; padding: 0; box-sizing: border-box;}
+            html{height: 100%;}
+            body{background: rgba(236,199,123,.3); font-family: sans-serif;}
+            /*Header-------------------------------------------*/
+            header{
+/*                background: #6699ff;*/
+                height: 200px;
+                text-shadow: 1px 1px 10px #fff;
+                padding: 10px;
+                font-size: 1.6em;
+                text-transform: uppercase;
+                text-align: center;
+                
+            }
+            
+            header nav ul{list-style-type: none;}
+            header nav ul li{display: inline; padding: 2%;}
+            a{text-decoration: none;}
+            header nav ul li a{height:100%;color: #000;}
+            header nav ul li a:hover{color: #fff;}
+            header img{width: 250px;}
+            /*Main Section-------------------------------------*/
+            
+            section.mainPicture{
+                background: url(book.jpg) no-repeat;
+                background-size: cover;
+                height: 100vh;
+               
+/*                width: 70%;
+                margin: 0 auto;*/
+                 margin-top: -200px;
+               
+            }
+            
+            /*Middle Section-----------------------------------*/
+            .secondSection, article.bottomArticle, .socialLinks{
+                background: #fff;
+                width: 70%;
+                margin: 0 auto;
+                overflow: hidden;
+                text-align: center;
+                
+            }
+            .secondSection .oneThird{
+                margin-left: 2.5%;
+                margin-top: 2%;
+                padding: 15px;
+                width: 30%;
+                float: left;
+                height: 290px;
+                border-left: grey solid 2px;
+                border-right: grey solid 2px;
+                border-radius: 25px; 
+                text-align: center;
+                font-size: 1.2em;
+                   
+            }
+            .secondSection,  .bottomArticle{overflow: hidden;}
+            .secondSection .oneThird img{
+                width: 100px;
+                
+            }
+            .secondSection .oneThird p{
+                padding-top: 15%; 
+            }
+            
+            /*Bottom Article-------------------------------------*/
+            article.bottomArticle{}
+            .bottomArticle img{width: 60%;float: left; padding: 2%;}
+            
+            .bottomArticle p{width: 40%;float: left; text-align: left;padding: 1%; }
+            
+            .bottomArticle h3{padding-top: 3%;}
+            
+             /*Footer-------------------------------------------*/
+             footer{ background: url(book.jpg) no-repeat;
+                background-size: cover;
+             height: 70px;
+             text-align: center;
+             padding-top: 20px;
+            }
+            footer li{display:inline; padding-left: 1%;}
+             footer li a{color: #000; font-size: 25px; text-shadow: 1px 1px 5px #fff;}
+             
+             @media (max-width: 800px){
+                 .bottomArticle img, .bottomArticle p, .secondSection .oneThird  {
+                     width: 100%;
+                     float: none;
+                     padding: 2%;
+                     border: none;
+                     margin: 0;
+                 }
+             }
+             
+  
+            
+        </style>
+    </head>
+    <body>
+        <main>
+            <header>
+                <div class="logo">
+                    <a href="index.html"><img src="PHANUM-logo.png" alt=""></a>
+                </div>
+                <nav class="mainNavegation">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Who</a></li>
+                        <li><a href="#">What</a></li>
+                        <li><a href="#">Where</a></li>
+                        <li><a href="#">Blog</a></li>
+                      
+                    </ul>
+                </nav>
+            </header>
+            <section class="mainPicture"></section>
+
+            <section>
+                <div class="secondSection">
+                    <div class="oneThird">
+                        <img src="circle-dollar.png" alt="" tltle="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div class="oneThird">
+                        <img src="news.png" alt="" tltle="">
+                        <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco ut aliquip ex ea commodo consequat. 
+                        </p>
+                    </div>
+                    <div class="oneThird">
+                        <img src="share-2.png" alt="" tltle="">
+                        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <article class="bottomArticle">
+                   <img src="passion.jpg" alt="" title="">
+                   <h3>Velit esse cillum</h3>
+                    <p>Lorem ipre dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut sum dolor sit amet, consectetur adipisicing elit, sed do eiusmore dolor inre dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut re dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                </article>
+            </section>
+
+            <footer>
+                
+                    <ul>
+                        <li class="facebook"><a href="#" class="entypo-facebook"></a></li>
+			<li class="twitter"><a href="#" class="entypo-twitter"></a></li>
+			<li class="dribbble"><a href="#" class="entypo-dribbble"></a></li>
+			<li class="behance"><a href="#" class="entypo-behance"></a></li>
+			
+                    </ul>
+               
+            </footer>
+        </main>
+
+    </body>
+</html>

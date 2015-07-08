@@ -1,0 +1,83 @@
+
+body{
+    font-family: sans-serif;
+    padding: 10%;
+    background: #e0eef5;
+    font-size: 2em;
+}
+a{
+    color:royalblue;
+    text-decoration: none;
+}
+
+/*Pseudo-elements*/
+
+/*Código ascii en representación de icono*/
+.phone:before{
+    content: "\2706";
+    color:royalblue;
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+
+/*a[href$=".pdf"]{
+    background: url(icon-pdf.png) no-repeat;
+    background-position: left center;
+    padding-left: 20px;
+}*/
+
+/*Insertar <img> por delante*/
+a[href$=".pdf"]:before{
+    content: url(icon-pdf.png);
+    margin-right: 10px;
+}
+
+a[href$=".pdf"]:before{
+    content: attr(href) ;
+}
+
+/*Insertar elem.inline con img de fondo*/
+a[href$=".pdf"]:after{
+    content: "";
+    background: url(icon-pdf.png) no-repeat;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-size: cover;
+}
+
+h1:before, h1:after{
+    content: "";
+    background: royalblue;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+}
+h1:before{
+    margin-right: 20px;
+}
+h1:after{
+    margin-left: 20px;
+}
+
+.icon_menu{
+    width: 30px;
+    height: 4px;
+    background: #222;
+}
+.icon_menu:before, .icon_menu:after{
+    content: "";
+    width: 30px;
+    height: 4px;
+    display: block;
+    position: relative;
+    background: #222;
+}
+.icon_menu:before{
+    top: -8px;
+}
+.icon_menu:after{
+    top: 3px;
+}

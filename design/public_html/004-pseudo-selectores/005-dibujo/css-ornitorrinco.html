@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Documento sin título</title>
+<style>
+*{
+      margin:0;
+      padding:0;
+      font-family: 'Berlin Sans FB';
+   }
+   .contenedor{
+      background-color:rgba(0, 149, 162, 0.3);
+      width:300px;
+      height:300px;
+      margin:auto;
+      margin-top:50px;
+      -webkit-border-radius:20%;
+      position:relative;
+      z-index:-2;
+   }
+
+   #nombre{
+      width:180px;
+      height: 20px;
+      padding:.3em;
+      font-weight: bold;
+      font-size:140%;
+      color:rgb(151, 211, 208);
+      text-shadow: 1px 1px #fff, -1px -1px #333;
+      position:absolute;
+      top:10px;
+      left:60px;
+   }
+
+   #cuerpo{
+      width: 100px;
+      height: 170px;
+      background-color: rgb(0, 170, 153);
+      -webkit-border-radius:30px 35px 0 0;
+      border:4px solid #000;
+      position:absolute;
+      bottom:50px;
+      left: 95px;
+
+   }
+
+   .antena{
+
+      width:4px;
+      height: 30px;
+      background-color:#000;
+      position:absolute;
+      z-index: 5;
+      -webkit-border-radius:5px;
+   }
+
+   .ant_right{
+      
+      left:55px;
+      top:-30px;
+      -webkit-transform:rotate(30deg);
+   }
+
+   .ant_left{
+
+      height:15px;
+      left:45px;
+      top:-15px;
+      -webkit-transform:rotate(-30deg);   
+   }
+
+   .ojos{
+
+      width:18px;
+      height:25px;
+      background-color:#000;
+      -webkit-border-radius:50%;
+      position:absolute;
+   }
+   .ojo_left{
+      
+      left:17px;
+      top:30px;
+   }
+   .ojo_right{
+
+      right:17px;
+      top:30px;
+
+   }
+   .ojo_left:after, .ojo_right:after{
+      content: " ";
+      width:9px;
+      height: 13px;
+      background-color:#fff;
+      -webkit-border-radius:50%;   
+      position:absolute;
+      left:4px;
+      top:1px;
+   }
+
+   .mejilla{
+      width:15px;
+      height: 15px;
+      background-color: rgba(218, 52, 204, 0.41);
+      -webkit-border-radius:50%;
+      position:absolute;
+       
+   }
+   .mejilla_left{
+
+       top:53px;
+       left:5px;
+   }
+   .mejilla_right{
+
+       top:53px;
+       right:5px;   
+
+   }
+   .pico{
+      width:120px;
+      height:16px ;
+      background-color: #fff;
+      background-color:rgb(255, 163, 47);   
+      -webkit-border-radius:10px;
+      border:3px solid #000;
+      position:absolute;
+      left:-14px;
+      top:70px;
+   }
+   .pico:after{
+      content:" ";
+      width: 65px;
+      height:13px;
+      background-color:rgb(255, 163, 47);   
+      -webkit-border-radius:0 0 15px 15px;
+      border-bottom:3px solid #000;
+      border-left:3px solid #000;
+      border-right:3px solid #000;
+      position:absolute;
+      left:25px;
+      bottom:-19px;
+
+   }
+
+   .pico_loma{
+      width: 20px;
+      height: 20px;
+      background-color:rgb(255, 163, 47);   
+      -webkit-border-radius: 5px;
+      -webkit-transform: rotate(45deg);
+      border-left:3px solid #000;
+      position:absolute;
+      border-top:3px solid #000;
+      top:60px;
+      left:37px;
+      z-index:3;
+      
+   }
+
+   .brazo{
+      width:38px;
+      height:17px;   
+      border-top:3px solid #000;
+      border-bottom:3px solid #000;
+      position:absolute;      
+      top:113px;
+
+   }
+   .brazo_left{
+
+      left:10px;
+      border-right:3px solid #000;
+      -webkit-border-radius:0 20px 20px 0;
+      -webkit-transform:rotate(10deg);
+
+   }
+
+   .brazo_right{
+      right:10px;
+      border-left:3px solid #000;
+      -webkit-border-radius: 20px 0 0 20px;
+      -webkit-transform:rotate(-10deg);
+
+   }
+
+   .cola{
+
+      width:100px;
+      height: 55px;
+      background: rgb(255, 163, 47) url('cola.jpg') repeat;   
+      -webkit-border-radius:30px 50% 50% 30px;
+      border:3px solid #000;
+      -webkit-transform:rotate(-8deg);
+      z-index:-1;
+      position:absolute;
+      top:190px;
+      left:10px;
+   }
+
+   .pie{
+      width:40px;
+      height:40px;
+      position:absolute;
+   }
+   .pie_left{
+      
+      bottom:40px;
+      left:85px;
+      -webkit-transform: rotate(-10deg);
+   }
+   .pie_right{
+      
+      bottom:40px;
+      right:85px;
+      -webkit-transform: rotate(10deg);
+   }
+   .dedo{
+      width:13px;
+      height:40px;
+      background-color:rgb(255, 163, 47);   
+      -webkit-border-radius: 50px;
+      left:11px;
+      top:-1.5px;
+      border-bottom:2px solid #000;
+      border-left:2px solid #000;
+      border-top:2px solid #000;
+      border-right:2px solid #000;
+      position:absolute;
+      z-index:2;
+   }
+   .dedo:after{
+      content:" ";
+      width:13px;
+      height:40px;
+      background-color:rgb(255, 163, 47);   
+      -webkit-border-radius: 70px 50px 90px 0px;
+      -webkit-transform: rotate(20deg);
+      border-right:3px solid #000;
+      border-bottom:3px solid #000;
+      border-top:3px solid #000;
+      position:absolute;
+      left: 8px;
+   }
+
+   .dedo:before{
+      content:" ";
+      width:13px;
+      height:40px;
+      background-color:rgb(255, 163, 47);   
+      -webkit-border-radius: 50px 50px 0px 90px;
+      -webkit-transform: rotate(-20deg);
+      border-left:3px solid #000;
+      border-bottom:3px solid #000;
+      border-top:3px solid #000;
+      position:absolute;
+      right:8px;
+
+   }
+</style>
+</head>
+
+<body>
+   <div class="contenedor">
+      <div id="nombre">Ornitorrinco</div>
+
+      <div id="cuerpo">
+
+         <div class="antena ant_left"></div>
+         <div class="antena ant_right"></div>
+
+         <div class="ojos ojo_left"></div>
+         <div class="ojos ojo_right"></div>
+
+         <div class="mejilla mejilla_left"></div>
+         <div class="mejilla mejilla_right"></div>
+
+         <div class="pico_loma"></div>
+         <div class="pico"></div>
+
+         <div class="brazo brazo_left"></div>
+         <div class="brazo brazo_right"></div>
+
+      </div>
+
+      <div class="cola">&nbsp;</div>
+
+
+      <div class="pie pie_left">
+         <div class="dedo">&nbsp;</div>
+      </div>
+      
+      <div class="pie pie_right">
+         <div class="dedo ">&nbsp;</div>
+      </div>
+   </div>
+</body>
+</html>

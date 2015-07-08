@@ -1,0 +1,70 @@
+@-webkit-keyframes botar{
+   20%{bottom:0;} 
+   100%{bottom:80%;}
+}
+@-webkit-keyframes deformar{
+    0%{-webkit-transform: scale(1.4,0.6)}
+    35%{-webkit-transform: scale(1,1)}
+}
+@-moz-keyframes botar{
+   20%{bottom:0;} 
+   100%{bottom:80%;}
+}
+@-moz-keyframes deformar{
+    0%{-moz-transform: scale(1.4,0.6)}
+    35%{-moz-transform: scale(1,1)}
+}
+@-o-keyframes botar{
+   20%{bottom:0;} 
+   100%{bottom:80%;}
+}
+@-o-keyframes deformar{
+    0%{-o-transform: scale(1.4,0.6)}
+    35%{-o-transform: scale(1,1)}
+}
+@-ms-keyframes botar{
+   20%{bottom:0;} 
+   100%{bottom:80%;}
+}
+@-ms-keyframes deformar{
+    0%{-ms-transform: scale(1.4,0.6)}
+    35%{-ms-transform: scale(1,1)}
+}
+@keyframes botar{
+   20%{bottom:0;} 
+   100%{bottom:80%;}
+}
+@keyframes deformar{
+    0%{transform: scale(1.4,0.6)}
+    35%{transform: scale(1,1)}
+}
+body{
+    background: #92a3ab;
+}
+div{
+    width: 140px;
+    height: 140px;
+    background: rgba(0,0,0,.6);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    
+    -webkit-animation-name: botar,deformar;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate; /*Propiedad que hace que la animaci´no en vez de fluir de inicio-fin inicio-fin... vaya inicio-fin fin-inicio, es decir, ida y vuelta*/
+    -webkit-transform-origin: center bottom;
+    
+    -moz-animation-name: botar,deformar;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+    -moz-transform-origin: center bottom;
+    
+    
+}

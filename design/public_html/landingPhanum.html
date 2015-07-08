@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Landing Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                
+            }
+            html{height: 100%}
+            body{
+                font-family: sans-serif;
+                font-size: 10px;
+                background-color: #F5F3E6;
+                text-align: center; 
+            }
+            header{
+/*                background: rgba(0,0,0,.15);*/
+                height: 6em; 
+                line-height: 6em;
+                position:relative;
+               
+                
+            }
+            header h1{
+                font-size: 3.5em; 
+                color: rgba(0,0,0,.8);
+                
+            }
+            
+            .topmain{
+                
+                margin-top: 60px;
+                padding-top: 60px;
+                
+            }
+            
+            .topmain span{
+                font-size: 10em;
+                color: rgba(0,0,0,.8);
+                text-shadow: 1px 1px 5px #87867F;
+            }
+            
+            .mainDescription{
+                background: url(003-propiedades-css/009-landingpage/images/landing.jpg) no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 100vh;/*con vh la altura coge el 100 de la vista horizontal*/
+                margin-top: -60px;
+                overflow: hidden;
+                color:#F5F3E6;
+            }
+          
+           
+           
+           .discovers, .creators{
+                width: 50%;
+                float: left;
+                padding-top: 10%;
+                
+               
+            }
+            
+             .discovers h3, .creators h3 {
+                text-shadow: 5px 5px 100px #000;
+                background: rgba(0,0,0,.4);
+                color: rgb(216,63,30); 
+                font-size: 4em;
+                padding-top: 35px;
+                font-weight: bold;
+            }
+            
+            .discovers h3 span, .creators h3 span{
+             font-weight: 900;
+            }
+                   
+/*          .logo{background:rgba(120,4,90,.5);}
+            .discovers{background:rgba(1,255,90,.5)}
+            .creators{background:rgba(0,200,255,.5)}
+            .company{background:rgba(120,0,0,.5); }
+            .lines{background:rgba(0,0,255,.5); }*/
+            .lines{
+               
+                float:left; 
+                width:100%; 
+            }
+            
+            .mainDescription ul{
+                height: 355px;
+                font-size: 1.1em;
+                background: rgba(0,0,0,.4);
+                
+                
+            }
+            .mainDescription li{
+                list-style-type: none;
+                padding: 20px;
+                height: 70px;
+                line-height: 70px;
+                font-size: 2em;
+            }
+            
+            
+            .book{background:url(003-propiedades-css/009-landingpage/images/women_book.jpg) no-repeat bottom;}
+            
+            .song{background:url(003-propiedades-css/009-landingpage/images/song.jpeg) no-repeat; }
+            
+            .movie{background:url(003-propiedades-css/009-landingpage/images/movie.jpg) no-repeat;}
+            
+            .passion{background:url(003-propiedades-css/009-landingpage/images/passion.jpg) no-repeat ; }
+            
+            .book, .song, .movie, .passion{
+                background-size: cover;
+                width: 100%;
+                height: 50vmin;
+                min-height: 250px;
+                max-width: 700px;
+                margin: 0 auto;
+                border-radius: 5px;
+                padding:10px;
+            }
+            .form{
+                background: rgba(245,243,230,.5);
+                min-height: 150px;
+                max-width: 700px;
+                width: 100%;
+                height: 100%;
+                margin:0 auto;
+                border-radius: 5px;
+                
+            }
+            
+            @media (max-width: 850px){
+                header h1{
+                    font-size: 4em;
+                     
+                }
+                .logo, .discovers, .creators{
+                /* margin-top: 80px;*/
+                 width: 100%;
+                }
+                .discovers, .creators{
+                padding-top: 15px;
+                 
+                }
+                .mainDescription{
+                height: 100%;
+                background-position: center;
+                }
+                .topmain{
+                padding-top: 5px;
+                
+                }
+                .topmain span{
+                font-size: 40px;
+                
+                }
+                .mainDescription ul{
+                
+                height: 280px;
+                
+                }
+                .mainDescription li{
+                
+                height: 70px;
+                line-height: 20px;
+                
+                }
+                
+                
+               
+            }
+           
+             @media (max-height: 900px){
+                .mainDescription{
+                     overflow: scroll;
+                }
+                
+                
+            }
+                
+             
+            
+</style>
+    </head>
+    <body>
+        <header><h1>PHANUM</h1></header>
+        <main>
+            <section>
+                
+                    
+                <div class="mainDescription">
+                    <div class="topmain"><span>Sharing is Culture</span></div>
+                    <div class="eslogan"><span>Sharing is Culture</span></div>
+                    <div class="discovers">
+                        <h3><span>DISCOVER</span></h3>
+                        
+                        <ul>
+                            <li>The best way to find and share art & culture</li>
+                            <li>Discounts on albums, books, exhibitions</li>
+                            <li>Latest news, places, festivals, films</li>
+                            <li>All categories connected</li>
+                        </ul>
+                    </div>
+                    
+                    
+                    
+                    <div class="creators">
+                        <h3><span>CREATE</span></h3>
+                        <ul>
+                            <li>The best professional team for you</li>
+                            <li>Low prices for members</li>
+                            <li>Support for artists</li>
+                            <li>Private studios</li>
+                            
+                        </ul>
+                    </div>
+                    
+                   
+                    
+                    <div class="lines">This is how we do it</div>
+                    
+                </div>
+            </section>
+            
+            <div class="verticalLine"></div>
+            <div class="logo">
+
+                <div class="company"><h2>Company</h2>
+                    <h3>With Phanum get ready to discover and create. We got for you a platform to connect your personal favorite art forms each other. You will get new creations related with what you like the most, and if you are an artist we have the most qualified team to get you out there. You will love it. </h3>
+                    <ul>
+                        <li>150 Millions of users all around the world</li>
+                        <li>65 Millions of artist working together</li>
+                        <li>Best Culture online platform 2015</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="book">
+                <div class="form"></div>
+            </div>
+            <div class="verticalLine"></div>
+            <div class="song"><div class="form"></div></div>
+            <div class="verticalLine"></div>
+            <div class="movie"><div class="form"></div></div>
+            <div class="verticalLine"></div>
+            <div class="passion"><div class="form"></div></div>
+            <div class="verticalLine"></div>
+            <div class="socialMedia">
+                <div class="facebook"></div>
+                <div class="twitter"></div>
+                <div class="pinterest"></div>
+            </div>
+            
+            
+            
+        </main>
+        
+    </body>
+</html>

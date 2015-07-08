@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+footer{
+    padding: 5%;
+    position: absolute;
+    background: #222;
+    bottom: 0;
+    width: 100%;
+}
+li{
+    list-style: none;
+    font-size: 3em;
+    display: inline-block;
+}
+
+/*Social________________________________*/
+.social{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+.social li a{
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background: url(../images/social.png) no-repeat; 
+    background-position: 0px 0px;
+}
+
+/*Facebook________________________*/
+ul li a[href*="facebook"]:hover{
+    background-position: 0px -64px;
+}
+
+/*pinterest________________________*/
+ul li a[href*="pinterest"]{
+    background-position: -64px 0px;
+}
+ul li a[href*="pinterest"]:hover{
+    background-position: -64px -64px;
+}
+
+/*youtube________________________*/
+ul li a[href*="youtube"]{
+    background-position: -129px 0px;
+}
+ul li a[href*="youtube"]:hover{
+    background-position: -129px -64px;
+}
+
+/*flikr________________________*/
+ul li a[href*="flikr"]{
+    background-position: -192px 0px;
+}
+ul li a[href*="flikr"]:hover{
+    background-position: -192px -64px;
+}

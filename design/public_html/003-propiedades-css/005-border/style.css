@@ -1,0 +1,42 @@
+
+/*colores de border*/
+.bred{border-color: red}
+.bgree{border-color: green}
+.bblue{border-color: blue}
+
+/*tipos de border*/
+.bdotted{border-style: dotted}
+.bdashed{border-style: dashed}
+.bdouble{border-style: double}
+.bgroove{border-style: groove}
+.bsolid{border-style: solid}
+.binset{border-style: inset}
+.boutset{border-style: outset}
+
+/*grosor de border*/
+.b5{border-width: 5px}
+.b2{border-width: 2px}
+
+/*Genérica -> border: border-width border-style border-color */
+/*.btipo1{
+    border-width: 5px;
+    border-style: groove;
+    border-color: blue;
+}*/
+.btipo1{
+    border: 5px groove blue;
+}
+#circulo{
+    background: tomato;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    
+    /*border-radius: top-left top-right bottom-right bottom-left*/
+    border-radius: 20px 0 50px 90px;
+    /*border-radius: top-left/bottom-right   top-right/bottom-left*/
+    border-radius: 20px 0;
+    border-radius: 20px;
+    
+    border-radius:50%; /*crea  circunferencias en cada una de las esquinas con un radio que equivale a la mitad del width del elemento*/
+}

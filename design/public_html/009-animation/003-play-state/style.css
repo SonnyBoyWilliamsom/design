@@ -1,0 +1,40 @@
+
+@-webkit-keyframes moveMe{
+    0%{left: 0}
+    100%{left: 300px}
+}
+
+body{
+    font-family: sans-serif;
+    padding: 10%;
+}
+a{
+    text-decoration: none;
+    background: tomato;
+    color:#fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+a:hover{
+    background: teal;
+}
+
+#caja{
+    width: 50px;
+    height: 50px;
+    background: #999;
+    margin-top: 50px;
+    border-radius: 3px;
+    -webkit-transition: all .2s;
+    /*Ponemos al elemento con posición para poder usar las coordenadas en la animación que le vamos a cargar, la otra hubiera sido utilizar translate()*/
+    position: relative;
+}
+/*Cargo la animación cuando el elemento es llamado por su ancla*/
+#caja:target{
+    -webkit-animation:moveMe 2s infinite;
+}
+#caja:hover{
+    -webkit-animation-play-state: paused;
+    cursor:pointer;
+    background: tomato;
+}

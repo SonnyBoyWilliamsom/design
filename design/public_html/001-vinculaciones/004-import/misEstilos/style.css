@@ -1,0 +1,13 @@
+@import "encabezados.css";
+@import "textos.css";
+
+body{
+font-family: sans-serif;
+background-color: #d6f5e8;
+
+}
+::selection {
+    color: #ffcccc;
+  background-color: #902a83;
+  text-shadow: none;
+}

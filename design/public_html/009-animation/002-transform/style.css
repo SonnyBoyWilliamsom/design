@@ -1,0 +1,28 @@
+
+@-webkit-keyframes moveMe{
+    0%{-webkit-transform:translate(0,0) rotateZ(0deg)}
+    25%{-webkit-transform:translate(100px,0) rotateZ(90deg);
+        background: tomato;
+    }
+    50%{-webkit-transform:translate(100px,100px) rotateZ(180deg)}
+    75%{-webkit-transform:translate(0,100px) rotateZ(360deg);}
+    100%{-webkit-transform:translate(0,0) rotateZ(0deg)}
+}
+@-moz-keyframes moveMe{
+    0%{-moz-transform:translate(0,0) rotateZ(0deg)}
+    25%{-moz-transform:translate(100px,0) rotateZ(90deg);
+        background: tomato;
+    }
+    50%{-moz-transform:translate(100px,100px) rotateZ(180deg)}
+    75%{-moz-transform:translate(0,100px) rotateZ(360deg);}
+    100%{-moz-transform:translate(0,0) rotateZ(0deg)}
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background: teal;
+    border-radius: 9px;
+    -webkit-animation: moveMe 3s infinite;
+    -moz-animation: moveMe 3s infinite;
+}

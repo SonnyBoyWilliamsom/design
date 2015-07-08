@@ -1,0 +1,87 @@
+@-webkit-keyframes moverFlecha{
+    100%{bottom: 30px;}
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    overflow-y: hidden;/*Elimina el scroll vertical*/
+}
+body{
+    font-family: sans-serif;
+}
+
+/*PORTADA
+===============*/
+body > section:first-child{
+    background: #ededed;
+    height: 100%;
+    text-align: center;
+    display: table;
+    width: 100%;
+}
+body > section:first-child h1{
+    display: table-cell;
+    vertical-align: middle;
+}
+/*FLECHA
+===============*/
+body > div:nth-child(2){
+    border:1px solid #222;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.5em;
+    position: fixed;
+    bottom: 20px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    -webkit-transition: all .5s;
+    cursor: pointer;
+    z-index: 1;
+    -webkit-animation: moverFlecha .5s infinite;
+    -webkit-animation-direction: alternate;
+}
+body > div:hover{
+    background: tomato;
+    color:#fff;
+    border:1px solid #fff;
+    -webkit-transform: rotate(180deg);
+}
+body > div:hover + main{
+    top:-100%;
+}
+
+/*CONTENIDO
+===============*/
+main{
+    padding: 10%;
+    height: 100%;
+    position: relative;
+    top:0;
+    background: #fff;
+    -webkit-transition: all 1s;
+}
+main header{
+    text-align: center;
+    border-bottom: 1px solid #ededed;
+    padding: 0 0 5%;
+    margin-bottom: 5%;
+}
+main section h2{
+    font-size: 3em;
+    letter-spacing: -5px;
+    margin-bottom: .8em;
+}
+main section p{
+    line-height: 1.5em;
+    text-align: justify;
+}
+

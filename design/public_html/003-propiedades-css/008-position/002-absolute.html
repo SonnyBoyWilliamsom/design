@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+            }
+            body{
+                background: url(bg_grid.gif);
+            }
+            #padre{
+                width: 400px;
+                height: 200px;
+                background: rgba(255,0,0,.3);
+                position: relative;
+                top: 50px;
+                left:50px;
+            }
+            #hijo{
+                width: 50px;
+                height: 50px;
+                background: teal;
+                color: #fff;
+                text-align: center;
+                line-height: 50px;
+                position: absolute;
+                top: 25px;
+                right: 5px;
+                
+            }
+            #tio{
+                width: 400px;
+                height: 200px;
+                background: rgba(0,0,255,.3);
+            }
+            /*Cuanto más abajo en estructura, más arriba en capa.*/
+        </style>
+    </head>
+    <body>
+       <!--El posicionamiento absolute va respecto a la posición (0,0) del navegador. No modifica el comportamiento del resto de elementos-->
+       
+       <div id="padre">Papi
+           <div id="hijo">A</div>
+       </div>
+       <div id="tio">B</div>
+      
+    </body>
+</html>

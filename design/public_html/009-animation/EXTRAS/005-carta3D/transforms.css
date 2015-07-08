@@ -1,0 +1,60 @@
+body {
+	padding-top: 50px;
+	background: #F7F7F7;
+	-webkit-perspective: 800px; /*determina la distancia entre el plano z=0 y el usuario para dar perspectiva al elemento 3D. Un elemento con z>0 se hace más grande y con z<0 se hace mas pequeño. */
+	
+}
+
+.wrap {
+	
+	margin: 0 auto;
+	width: 250px;
+	height: 350px;
+	cursor: pointer;
+}
+.wrap div {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background-position: 50% 50%; /*posicionamos el dibujo en el centro de la carta*/
+	background-size: 150px;
+	background-repeat: no-repeat;
+	box-shadow: inset 0 0 45px rgba(255,255,255,0.3), 0 12px 20px -10px rgba(0,0,0,0.4);
+	color: #FFF;
+	text-align: center;
+}
+.side-a {
+	background: #498FBC url('img/mike.png');
+}
+.side-b {
+	background: #33363B url('img/logo.png');
+}
+
+
+
+/*transformaciones */
+
+
+.wrap {
+	transition: -webkit-transform 1s ease-in;
+	-webkit-transform-style: preserve-3d; /*los elementos conservan las transformaciones 3d*/
+}
+
+.wrap div {
+	position: absolute;
+	-webkit-backface-visibility: hidden;  /*Ocultar la parte trasera de un elemento div girada:*/
+}
+
+.side-a {
+	z-index: 100;
+}
+
+.side-b {
+	-webkit-transform: rotateY(180deg);
+	-webkit-transform-style: preserve-3d;
+}
+
+.wrap:hover {
+	-webkit-transform: rotateY(-1turn);
+	-webkit-transform-style: preserve-3d;
+}

@@ -1,0 +1,96 @@
+<!-- @ author Agustín Baraza (contacto@nosolocss.com)
+	 @ Copyright 2013 nosolocss.com. All rights reserved
+	 @ http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+	 @ link http://www.nosolocss.com */ -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Rotar imagenes en 3D</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/> 
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style type="text/css"> 
+
+@-webkit-keyframes rotateinfinite {
+  from {
+    -webkit-transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(-360deg);
+  }
+}
+
+.contenedor{
+	display:block;
+	width:562px;
+	margin:150px auto;
+}
+.imagen1{
+	float:left;
+	margin-right:50px;		
+}
+.imagen2{
+	float:left;
+}
+.nosolocss{
+	margin:50px auto;
+	width:330px;
+	height:43px;
+}
+
+.rotarY:hover{
+	-webkit-transform:rotateY(180deg);
+	-webkit-transition-duration: 2s;
+
+
+}
+
+.rotarX:hover{
+	-webkit-transform:rotateX(180deg);
+	-webkit-transition-duration: 2s;
+
+
+}
+.rotateinfinite{
+
+    -webkit-animation-name: rotateinfinite;
+    -webkit-animation-timing-function: linear;
+   -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+   
+
+}
+
+
+.rotateinfinite:hover {
+  -webkit-animation-play-state: paused;
+}
+</style>
+</head>
+
+<body> 
+
+	<div class="contenedor">
+		<div class="nosolocss rotateinfinite">
+			
+			<img src="./cice.png" alt="nosolocss" />
+		
+		</div>
+		<div class="imagen1 rotarY">
+			
+			<img src="./html5.png" alt="logohtml5" />
+		
+		</div>
+		<div class="imagen2 rotarX">
+			
+			<img src="./css.png" alt="logocss" />
+		
+		</div>
+
+	</div>
+</body>
+
+
+</html>

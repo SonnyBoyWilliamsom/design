@@ -1,0 +1,69 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    padding: 10%;
+}
+a{
+    display: inline-block;
+    margin: 20px 0;
+}
+p a{
+    margin: 0;
+}
+input{ /*input:not([type="submit"]){}*/
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    color:teal;
+    font-size: 18px;
+}
+input:focus{
+    outline: none;
+    border-bottom: 1px solid crimson;
+}
+
+/*Selector para modificar el texto del placeholder, ya que es independiente a ciertas caracteristicas que se le apliquen al input*/
+::-webkit-input-placeholder{
+    color:crimson;
+    font-style: italic;
+    opacity: .5;
+}
+::-moz-placeholder{
+    color:crimson;
+    font-style: italic;
+    opacity: .5;
+}
+:-ms-placeholder{
+    color:crimson;
+    font-style: italic;
+    opacity: .5;
+}
+
+
+/*Attribute Selectors*/
+a[class="foo"]{ /*a.foo{}*/
+    background: crimson;
+    color:#fff;
+    padding: 10px;
+    text-decoration: none;
+}
+a[target="_blank"]{
+    color:crimson;
+}
+input[type="submit"]{
+    background: crimson;
+    border: none;
+    color:#fff;
+    width: 30%;
+}
+input[type="submit"]:hover{
+    background: #222;
+    cursor: pointer;    
+}

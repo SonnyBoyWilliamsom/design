@@ -1,0 +1,22 @@
+
+body{
+    font-family: sans-serif;
+    padding: 10%;
+}
+
+/*Combinators_______________*/
+
+/*Con el selecor de hijo ">"  se seleccionan todos los elementos hijos inmediatos o directos del elemento especificado  */
+main > a{
+    color:crimson;
+}
+
+/*El selector de hermano inmediato "+" selecciona al elemento inmediatamente detrás en código*/
+main h1 + a + p{
+    color:teal;
+}
+
+/*Selector de hermanos adyacentes "~" */
+main ~ p {
+    color:tomato;
+}

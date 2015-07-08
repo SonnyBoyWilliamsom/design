@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            body{
+                font-family: sans-serif;
+                background: url(bg_grid.gif);
+            }
+            
+            #padre{
+                background: rgba(0,0,0,.5);
+                width: 80%;
+                margin: 0 auto;
+                color: #fff;
+                text-align: center;
+                line-height: 300px;
+                /*Propiedad que mantine la altura del padre si todos sus hijos flotan*/
+                overflow: hidden;
+            }
+            #a{background: rgba(255,0,0,.6); width:300px;float:left;}
+            
+            #b{background: rgba(0,255,0,.6); width:600px;float:right;}
+        </style>
+    </head>
+    <body>
+        
+        <!--Cuando la caja se posiciona una caja de forma flotante, la caja deja de pertenecer al flujo normal de la página, lo que significa que el resto de cajas ocupan el espacio dejado por la caja flotante. Se posiciona lo más a la izquierda o lo más a la derecha posible de la posición en la que se encontraba originalmente. Los bloques no ceden su espacio a los float, lo float en cambio si lo ceden-->
+        
+        <div id="padre">
+            <div id="a">A</div>
+            <div id="b">B</div>
+        </div>
+      
+    </body>
+</html>

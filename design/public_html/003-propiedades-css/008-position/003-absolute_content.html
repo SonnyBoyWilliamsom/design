@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            body{
+                background: url(bg_grid.gif);
+            }
+            #a,#b,#c{
+/*              margin:30px;
+                padding:30px;
+                font-size:1.2em;
+                background: rgba(0,0,0,0.3);
+                box-sizing: border-box;
+                border-radius: 20px;*/
+                width: 400px;
+                height: 150px;
+                text-align:center;
+                line-height: 150px;//truco para centrar verticalmente el texto: espaciado entre lineas = height
+                color:#fff;
+               
+            }
+            #a{ background: rgba(255,0,0,0.3);}
+            #b{ 
+                background: rgba(0,255,0,0.7);
+                position: absolute;
+                top:100px;
+                left:100px;
+               
+            }
+            #c{ 
+                background: rgba(0,0,255,0.3);
+                position: absolute;
+                right:0;
+            }
+            /*Cuanto más abajo en estructura, más arriba en capa.*/
+        </style>
+    </head>
+    <body>
+       <!--El posicionamiento relativo va respecto a la posición actual del elemento. No modifica el comportamiento del resto de elementos-->
+       
+       <div id="a">A</div>
+       <div id="b">B</div>
+       <div id="c">C</div>
+    </body>
+</html>

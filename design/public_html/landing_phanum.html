@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Phanum</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            *{
+/*                background: rgba(0,0,0,.4);
+ background-color: #F5F3E6;*/
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                
+            }
+            
+            html{
+                height: 100%;
+            }
+            
+            body, main{
+                font-family: sans-serif;
+                 background-color: #F5F3E6;
+                 height: 100%;
+            }
+/*            main{
+                background: url(003-propiedades-css/009-landingpage/images/art-exposition-735518.jpg) no-repeat ;
+                background-size: cover;
+                height: 100%;
+                overflow: scroll;
+               
+            }*/
+            ul{
+                list-style-type: none;
+            }
+            section.mainSection{
+                background: url(003-propiedades-css/009-landingpage/images/art-exposition-735518.jpg) no-repeat ;
+                background-size: cover;
+                height: 65vh;
+                min-height: 290px;
+                overflow: scroll;
+            }
+            .company{
+                
+                 background: rgba(245,243,230,.3);
+                 padding: 2% 5%;
+                 height: 100%;
+                 width: 40%;
+                 
+                 float:left;
+            }
+            .company h2 {
+                padding-top: 1em;
+                font-size: 2em;
+                text-shadow: 0 0 50px #000;
+            }
+            .company p{
+                 font-size: 1.2em;
+                 padding-top: 1em;
+                 text-shadow: 0 0 10px #F5F3E6;
+                 font-weight: bold;
+            }
+            
+            .subtitle{
+                text-transform: uppercase;
+                font-size: 1.5em;
+                
+                
+            }
+            
+            .discover{
+               background: rgba(0,0,0,.4);
+                height: 100%;
+                width:30%;
+                float: left;
+            }
+            .discover ul{
+                
+                margin-top: 15%;
+                
+            }
+            .discover ul li, .create ul li{
+                padding: 1em;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            .discover ul li{
+                margin: 5% auto;
+                font-size: 1.2em;
+                color: #F5F3E6;
+                width: 90%;
+                 text-align: center;
+                
+            }
+            .discover ul li:hover {
+               background: url(003-propiedades-css/009-landingpage/images/congruent_pentagon.png);
+                cursor:crosshair;
+               
+                transform: scale(1.2) rotate(0deg) translateX(25px) translateY(0px) skewX(0deg) skewY(0deg);
+                border-radius: 10px;
+            }
+            .signUpform{
+                 background: rgba(0,0,0,.4);
+                 padding: 5% 5%;
+                 height: 100%;
+                 width:30%;
+                float: left;
+                color: #B1F6CB;
+            }
+            input[type="text"],  input[type="email"]{
+                color: #555;
+                height: 50px;
+                line-height:15px;
+                width: 100%;
+                padding: 10px;
+                margin-top: 5px;
+                border: 5px solid #B1F6CB;
+                background: #FBFBFB;
+                outline: 0;
+                -webkit-box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+                box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+                font:  1.2em sans-serif;
+                border-radius: 10px;
+            }
+            .signUpbutton {
+                 background: url(003-propiedades-css/009-landingpage/images/congruent_pentagon.png);
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-border-radius: 5px;
+                border: none;
+                padding: 1em;
+                color: #000;
+                text-shadow: 1px 1px 1px #949494;
+                font:  1.2em sans-serif;
+            }
+            
+            .signUpbutton:hover {
+                cursor:pointer;
+                
+            }
+            section.createSection{
+                background: url(003-propiedades-css/009-landingpage/images/congruent_pentagon.png);
+                height: 30%;
+                text-align: center;
+            }
+            .create{
+                padding-top: 2.5%;
+            }
+            .create ul li{
+                padding: 15px;
+                color: #000;
+            }
+            .secondCall ul li{
+                width: 25%;
+                float:left;
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <main>
+            
+        <section class="mainSection">
+            <div class="company">
+                <img src="003-propiedades-css/009-landingpage/images/PHANUM-logo.png" alt="">
+                
+                
+                <h2>Sharing is Culture</h2><span class="subtitle">discover, create and share Culture</span>
+                <p>Connect your personal favorite art forms each other. Get new creations related with what you like the most, and if you are an artist we have the most qualified team to get you out there.<br> <span>Get ready to discover and create. <br>You will love it. </span></p>
+                </div>
+                <div class="discover">
+                    <ul>
+                        <li>The best way to find and share art & culture</li>
+                        <li>Discounts on albums, books, exhibitions</li>
+                        <li>Latest news, places, festivals, films</li>
+                        <li>All categories connected</li>
+                        <li>For Free</li>
+                    </ul>
+                </div>
+          
+            
+            <div class="signUpform">
+                <form>
+                    <input type="text" name="nameUser" placeholder="Pick a username" required>
+                    <input type="email" name="emailUser" placeholder="Your email" required>
+                    <input type="text" name="userPass" placeholder="Create a password">
+                    <p>Use at least one lowercase letter, one numeral, and seven characters.</p>
+                    <button class="signUpbutton">Sign up for Phanum</button> 
+                    <p>By clicking "Sign up for GitHub", you agree to our <span>terms of service</span> and <span>privacy policy</span>. We will send you account related emails occasionally.</p>
+                </form>
+                
+            </div> 
+        
+        </section>
+            
+        <section class="createSection">
+            
+            <div class="create">
+                <span class="subtitle">Creators & Artist</span >
+            <p>The best professional team for you, Low prices for members,Support for artists & Private studios</p>
+                 <ul>
+                    <li>150 Millions of users all around the world</li>
+                    <li>65 Millions of artist working together</li>
+                    <li>Best Culture online platform 2015</li>
+
+                </ul>
+            </div>
+        </section>
+            
+            
+                <div class="secondCall">
+                    <ul>
+                        <li>Twitter</li>
+                        <li>Facebook</li>
+                        <li>Pinterest</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+           
+
+
+
+        </main>
+        
+    </body>
+</html>

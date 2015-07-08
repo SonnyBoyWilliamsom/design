@@ -1,0 +1,66 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    padding: 10%;
+}
+a{
+    margin: 10px 0;
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    background: teal;
+    padding: 10px;
+}
+
+/*Pseudo-clases*/
+p:hover{
+    /*activa las propiedades al pasar por encima del elemento. Aplicable a cualquier etiqueta*/
+    cursor: pointer;
+    color: #45c3ae;
+}
+a:hover{
+    background: #45c3ae;
+}
+a:visited{
+    /*activa las propiedades cuándo el elemento ha sido visitado*/
+    background: #999;
+}
+a:hover:visited{ 
+    /*Cuándo paso por encima del visitado*/
+    background: #333;
+}
+
+/*Selector excluyente tag:not(class/id/attr/child) */
+p:not(.destacado){
+    color:tomato;
+}
+
+/*Modifico propiedades cuándo selecciono la información en el navegador*/
+::selection{
+    background: teal;
+    color:#fff;
+}
+
+p.destacado{
+    /*Propiedad de CSS3 que impide la selección y por tanto el copiar el texto que contenga la etiqueta*/
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    -ms-user-select:none;
+}
+
+input{
+    padding: 10px;
+    margin-top: 20px;
+}
+/*Selector de input activo*/
+input:focus{
+    background: #fff6ad;
+    border:2px solid teal;
+    outline: none; /*propiedad que elimina el borde azul que pone por defecto el navegador*/
+}

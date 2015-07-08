@@ -1,0 +1,36 @@
+/*Text-align*/
+.center{text-align:center;}
+.izq{text-align: left;}
+.justify{text-align: justify;}
+.derecha{text-align: right;}
+
+/*Color*/
+.fontRed{color:tomato;}
+.fontGris{color: #666;}
+.fontBlue{color:rgb(0,0,255);}
+.fontBlueAlpha{color:rgba(0,0,255,0.4);}
+
+/*.font-size*/
+.font24{font-size: 24px;}
+.font16{font-size: 12px;}
+
+/*Font-style*/
+.italic{font-style: italic;}
+
+/*Text-transform*/
+.upper{text-transform: uppercase;}
+.lower{text-transform: lowercase;}
+.cap{text-transform: capitalize;}
+
+/*Letter spacing*/
+.sapcing5px{letter-spacing: 5px;}
+.spacing10px{letter-spacing: 10px;}
+
+/*text decoration*/
+.sub{text-decoration: underline;}
+.over{text-decoration: overline;}
+tachado{text-decoration: line-through}
+
+/*fontWeight*/
+.bold{font-weight: bold;}
+.light{font-weight: lighter;}

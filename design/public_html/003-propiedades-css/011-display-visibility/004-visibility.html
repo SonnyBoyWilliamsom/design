@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+             *{margin: 0; padding: 0; box-sizing: border-box;}
+            html{height: 100%;}
+            body{background: url(bg_grid.gif); font-family: sans-serif;}
+            section div{
+                width: 200px;
+                height: 200px;
+                line-height: 200px;
+                background: rgba(255,0,0,.3);
+                font-size: 4em;
+                color: #fff;
+                text-align: center;
+                border: 1px solid #fff;
+                /*display: block;*//**/
+                /*display: inline;*//*se colocan en linea con el tamaño dado*/
+                /*display: inline-block;*//*se colocan en linea con el tamaño dado y ademas permiten modificar su tamaño y posición*/
+            }
+            .oculto{visibility: hidden;}
+            /*El valor hidden permite ocultar el elemento pero mantener el espacio físico en la estructura del html. Valores que puede tomar: visible-hidden*/
+            
+        </style>
+    </head>
+    <body>
+        <!--Display: establece el tipo de caja que genera cada elemento (comportamiento). Valores posible para la propiedad display:
+        .none = hace que el elemento desaparezca por completo de la página, haciendo que éste no ocupe e3spacion y por tanto el reto de elementos adyacentes ocupen su lugar
+        .block = hace que los elementos se comporten como bloques, pudiendo así modificar sus medidad y njugar con la flotaciones
+        .inline = hace que los elementos se coloquen en linea ocupando únicamente el esacion que tenga su contenido
+        .inline-block = contiene los elementos en línea y permite que se modifiquen su altura y posición. Para eliminar los espacion entre cajas, poner todas las etiquetas del html en línea (sin saltos).
+        .table = hace que los elementos se comporten como tablas
+        .table-cell = hace que un elemento se comporte como celda de una tabla (vertical-align)
+        
+        
+        -->
+        <section>
+            <div>1</div>
+            <div>2</div>
+            <div class="oculto">3</div>
+            <div>4</div>
+            <div>5</div>
+           
+        </section>
+        
+    </body>
+</html>

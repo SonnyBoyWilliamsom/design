@@ -1,0 +1,30 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    padding: 10%;
+}
+li{
+    list-style-position: inside;
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+    color:tomato;
+}
+section{
+    margin: 50px 0;
+    text-align: justify;
+}
+
+/*Selector para aplicar propiedades a los elementos que son referenciados o llamados por anclas*/
+:target{
+    background: tomato;
+    color:#fff;
+    padding: 20px;
+}
+

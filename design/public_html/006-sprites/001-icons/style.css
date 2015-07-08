@@ -1,0 +1,22 @@
+
+body{
+    font: 1em/1.5 sans-serif;
+}
+li{
+    list-style: none;
+    font-size: 2em;
+}
+
+li i{
+    background: url(sprite.png) no-repeat;
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+}
+
+li:nth-child(2) i{
+    background-position-y: -83px;
+}
+li:nth-child(3) i{
+    background-position-y: -163px;
+}

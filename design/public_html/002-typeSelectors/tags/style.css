@@ -1,0 +1,38 @@
+/*Selector universal: selecciona o afecta a todos los elementos de la página*/
+*{
+    font-size: 16px;
+}
+
+/*Selector por etiquetas=selecciona todos los elementos de la página cuya etiqueta HTML coincide con el valor del selector*/
+
+body{
+    background: #d6f5e8;
+    font-family: sans-serif;
+    padding:20px;
+}
+h1{
+    font-size: 40px;
+    color:#17e800;
+}
+
+h2{
+    font-size:30px;
+    color:#24b5ff;
+}
+
+p{
+    background: #cce7f4;
+    padding:20px;
+    color:#a800d9;
+    line-height: 15px;
+}
+/*span{
+    color:#ff9400;
+    
+}*/
+
+/*Selectores descententes=selecciona los elementos que se encuentran dentro de otros(accedemos a ellos por parentesco)*/
+p span{
+    color:#ff9400;
+    
+}

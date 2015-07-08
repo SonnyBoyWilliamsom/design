@@ -1,0 +1,42 @@
+/*
+    Author     : Jairo
+    Created on : 20-may-2015, 10:48:30
+    Last Update on : 20-may-2015
+*/
+/*Selectores
+0.Selectores genéricos
+1.Header
+2.Main
+3.Footer
+*/
+
+/*0.Selectores genéricos______________________________________*/
+body{
+    font-family: sans-serif;
+    background: #efefef;
+}
+.global{/*Header and Footer*/
+    background: green;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+p.global{
+    text-transform: uppercase;
+}
+
+header span{
+    color:#ccffcc;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+}
+
+/*1.Header____________________________________________________*/
+/*2.Main______________________________________________________*/
+main{
+    padding: 20px;   
+}
+/*3.Footer____________________________________________________*/
+footer.global{
+   padding: 1px; 
+}

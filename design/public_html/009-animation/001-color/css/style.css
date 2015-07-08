@@ -1,0 +1,38 @@
+@import "keyframes.css"; /*Si me molestan todas las lineas de código de las animaciones, puedo extraerlas a un documento aparte e incluirlo en este*/
+
+body{
+    padding: 10%;
+}
+div{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: teal;
+    margin: 0 auto;
+}
+.animColor{
+    /*Cargamos animación a todos los elementos que tengan esa clase:*/
+    -webkit-animation-name: cambiarColor; /*cargamos animación*/
+    -webkit-animation-duration: 2s; /*tiempo de duración de la animación*/
+    -webkit-animation-iteration-count: 3; /*número de repeticion (X/infinite)*/
+    -webkit-animation-delay: 1s; /*tiempo de espera para ejecución*/
+    -webkit-animation-fill-mode: forwards; /*estado en el que mantenemos el objeto tras realizar la animación (forwards=to=100% / backwards=from=0%)*/
+    
+    /*LO MISMO PERO UTILIZANDO LA GENÉRICA_______*/
+    
+    /*animation: name   duration   iteration-count   delay*/
+    animation: cambiarColor 2s 3 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation: cambiarColor 2s 3 1s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: cambiarColor 2s 3 1s;
+    -moz-animation-fill-mode: forwards;
+    -o-animation: cambiarColor 2s 3 1s;
+    -o-animation-fill-mode: forwards;
+    -ms-animation: cambiarColor 2s 3 1s;
+    -ms-animation-fill-mode: forwards;
+}
+
+.orgullo{
+    animation: arcoIris 7s infinite;
+}

@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    background: #ddd;
+    font-size: 10px;
+}
+.btn{
+    width: 250px;
+    margin:50px auto;
+    text-align: center;
+    font-size:1.4em; /*10px * 1.4 = 14px*/
+    background: #5587ae;
+    color:#fff;
+    padding: .5em; /*14px * 0.5 = 7px*/
+    border-radius: 3px;
+    
+    border:1px solid #466e86;
+    box-shadow: 0 1px 1px rgba(0,0,0,.2),
+                0 0 1px rgba(255,255,255,.5) inset;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.4);
+    
+}
+div.btn span{
+    font-size: .7em;
+    color:#000;
+    text-shadow: 0 1px 0 rgba(255,255,255,.3);
+}
+
+.sin{
+    border:none;
+    box-shadow: none;
+    text-shadow: none;
+}
+div.sin span{
+    text-shadow: none;
+}
+
+

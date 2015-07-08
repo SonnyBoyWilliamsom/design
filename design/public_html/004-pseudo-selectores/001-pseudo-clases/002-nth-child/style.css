@@ -1,0 +1,79 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+ul{
+    width: 70%;
+    margin: 20px auto;
+}
+li{
+    border: 1px solid #ccc;
+    list-style-position: inside;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/*Structural pseudo-clase -  :nth-child(even/odd/ de cuánto en cuánto quiero saltar + de dónde quiero empezar a modificar / o sólo el elemento que quiero modificar)*/
+
+/*Seleccionar elementos pares*/
+/*ul li:nth-child(even){
+    background: #ccc;
+}*/
+/*ul li:nth-child(2n+2){
+    background: #ccc;
+}*/
+
+/*Seleccionar elementos impares*/
+/*ul li:nth-child(odd){
+    background: #222;
+    color:#fff;
+}*/
+/*ul li:nth-child(2n+1){
+    background: #222;
+    color:#fff;
+}*/
+
+ul li:nth-child(2n+2){ /*orden descendente*/
+    background: #ccc;
+}
+ul li:hover:nth-child(2n+2){ 
+    background: #ededed;
+}
+
+ul li:nth-last-child(2n+2){ /*orden ascendente LAST*/
+    background: #ededed;
+}
+ul li:hover:nth-last-child(2n+2){ 
+    background: #ccc;
+}
+
+/*El HIJO del article  que ocupe la posición indicada, independientemente de la etiqueta que sea*/
+article :nth-child(2){
+    color: tomato;
+}
+
+
+/*ul li:nth-child(1){
+    background: teal;
+}*/
+ul li:first-child{
+   background: #000; 
+   text-align: center;
+   list-style: none;
+   text-transform: uppercase;
+   color:#fff;
+}
+/*ul li:nth-last-child(1){
+    background: teal;
+}*/
+ul li:last-child{
+   background: #000;
+   color:#fff;
+}
+
+

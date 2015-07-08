@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Phanum</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            @charset "utf-8";
+
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+a[class*="entypo-"]:before {
+	font-family: 'entypo', sans-serif;
+}
+
+            *{
+/*                background: rgba(0,0,0,.4);
+ background-color: #F5F3E6;*/
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                
+            }
+            
+            html{
+                height: 100%;
+            }
+            
+            body, main{
+                font-family: sans-serif;
+                background: url(003-propiedades-css/009-landingpage/images/art-exposition-735518.jpg) no-repeat ;
+                background-size: cover;
+                 height: 100%;
+            }
+/*            main{
+                background: url(003-propiedades-css/009-landingpage/images/art-exposition-735518.jpg) no-repeat ;
+                background-size: cover;
+                height: 100%;
+                overflow: scroll;
+               
+            }*/
+            ul{
+                list-style-type: none;
+            }
+            section.mainSection{
+                height: 65vh;
+                min-height: 290px;
+                overflow: scroll;
+            }
+            .company{
+                background: rgba(245,243,230,.3);
+                 padding: 2% 5%;
+                 height: 100%;
+                 width: 40%;
+                 
+                 float:left;
+            }
+            .company h2 {
+                padding-top: 1em;
+                font-size: 2em;
+                text-shadow: 0 0 50px #000;
+            }
+            .company p{
+                 font-size: 1.2em;
+                 padding-top: 1em;
+                 text-shadow: 0 0 10px #F5F3E6;
+                 font-weight: bold;
+            }
+            
+            .subtitle{
+                text-transform: uppercase;
+                font-size: 1.5em;
+            }
+            
+            .discover{
+               background: rgba(0,0,0,.4);
+                height: 100%;
+                width:30%;
+                float: left;
+            }
+            .discover ul{
+                margin-top: 5%;
+                
+            }
+            .discover ul li, .create ul li{
+                padding: 0.5em;
+                text-transform: uppercase;
+                font-weight: bold;
+                text-shadow: 0 0 50px #F5F3E6;
+                 
+            }
+            .discover ul li{
+                margin: 0 auto;
+                font-size: 1.2em;
+                color: #F5F3E6;
+                width: 90%;
+                text-align: center;
+                  
+                
+            }
+            .discover ul li:hover {
+               background: url(003-propiedades-css/009-landingpage/images/congruent_pentagon.png);
+               text-shadow: -5px 10px 30px #000;
+                font-weight: bold;
+                color: #F5F3E6;
+                cursor:crosshair;
+                transition: transform .5s;
+                transform: scale(1) rotate(0deg) translateX(25px) translateY(0px) skewX(0deg) skewY(0deg);
+                border-radius: 10px;
+            }
+            .discover ul li img{
+                width: 50px;
+               
+            }
+            .signUpform{
+                 background: rgba(0,0,0,.4);
+                 padding: 5% 5%;
+                 height: 100%;
+                 width:30%;
+                float: left;
+                color: #B1F6CB;
+            }
+             .signUpform form p {
+               padding: 10px;
+               line-height: 30px;
+                   
+            }
+            .signUpform form p a{
+                text-decoration: underline;
+                color: #F5F3E6;
+            }
+            input[type="text"],  input[type="email"], input[type="password"]{
+                color: #555;
+                height: 50px;
+                line-height:15px;
+                width: 100%;
+                padding: 10px;
+                margin-top: 5px;
+                border: 5px solid #B1F6CB;
+                background: #FBFBFB;
+                outline: 0;
+                -webkit-box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+                box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+                font:  1.2em sans-serif;
+                border-radius: 10px;
+            }
+            .signUpbutton {
+                 background: url(003-propiedades-css/009-landingpage/images/congruent_pentagon.png);
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-border-radius: 5px;
+                border: none;
+                padding: 1em;
+                color: #000;
+                text-shadow: 1px 1px 1px #949494;
+                font:  1.2em sans-serif;
+                box-shadow: inset 0 0  20px rgba(0,0,0,.3);
+            }
+            
+            .signUpbutton:hover {
+                cursor:pointer;
+                box-shadow:  0 0  10px rgba(0,0,0,.3);
+                
+            }
+            section.createSection{
+                background: url(003-propiedades-css/009-landingpage/images/congruent_pentagon.png);  
+                width: 60%;
+                float: right;
+                height: 35vh;
+                text-align: center;
+            }
+            .create{
+                padding-top: 2.5%;
+            }
+            .create ul li{
+                padding: 15px;
+                color: #000;
+                 text-shadow: 0 0 1px #000;
+            }
+            footer{
+                
+                background: rgba(245,243,230,.3);
+                width: 40%;
+                float: left;
+                height: 35vh;
+                
+            }
+            .secondCall{
+                position: absolute;
+                bottom: 0;
+                height: 35vh;
+                width: 40%;
+            }
+
+
+            a {
+                    text-decoration: none;
+            }
+
+            ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+            }
+
+            /* ---------- SOCIAL ---------- */
+
+            .social {
+                    position: relative;
+                    height: 3em;
+                    width: 40%;
+                    margin: 0 auto;
+                    margin-top: 20%;
+            }
+
+            .social li {
+                    display: block;
+                    height: 4em;
+                    line-height: 4em;
+                    margin: -2.2em;
+                    position: absolute;
+                    transition: transform .7s;
+                    transform: rotate(45deg);
+                    text-align: center;
+                    width: 4em;
+            }
+
+            .social a {
+                    color: #000;
+                    display: block;
+                    height: 4em;
+                    line-height: 4em;
+                    text-align: center;
+                    -webkit-transform: rotate(-45deg);
+                    -moz-transform: rotate(-45deg);
+                    -ms-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                    width: 4em;	
+            }
+
+            .social li:hover {
+              -webkit-transform: scale(1.3,1.3) rotate(45deg);
+                    -moz-transform: scale(1.3,1.3) rotate(45deg);
+              -ms-transform: scale(1.3,1.3) rotate(45deg);
+                    -o-transform: scale(1.3,1.3) rotate(45deg);
+              transform: scale(1.3,1.3) rotate(45deg);
+            }
+
+            .facebook {
+                    background: #B1F6CB;
+                    left: 0;
+                    top: 0%;
+            }
+
+            .twitter {
+                    background: #CCFACF;
+                    bottom: 0;
+                    left: 25%;
+            }
+
+            .dribbble {
+                    background: #EBFDD4;
+                    left: 50%;
+                    top: 0%;
+            }
+
+            .behance {
+                    background: #B1F6CB;
+                    bottom: 0;
+                    left: 75%;
+            }
+
+            .linked-in {
+                    background: #CCFACF;
+                    left: 100%;
+                    top: 0%;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <main>
+            
+        <section class="mainSection">
+            <div class="company">
+                <img src="003-propiedades-css/009-landingpage/images/PHANUM-logo.png">
+                
+                
+                <h2>Sharing is Culture</h2><span class="subtitle">discover, create and share Culture</span>
+                <p>Connect your personal favorite art forms each other. Get new creations related with what you like the most, and if you are an artist we have the most qualified team to get you out there.<br> <span>Get ready to discover and create. <br>You will love it. </span></p>
+                </div>
+                <div class="discover">
+                    <ul>
+                        <li><div><img src="003-propiedades-css/009-landingpage/images/book.png"></div>The best way to find and share art & culture</li>
+                        <li><div><img src="003-propiedades-css/009-landingpage/images/circle-dollar.png"></div>Discounts on albums, books, exhibitions</li>
+                        <li><div><img src="003-propiedades-css/009-landingpage/images/news.png"></div>Latest news, places, festivals, films</li>
+                        <li><div><img src="003-propiedades-css/009-landingpage/images/share-2.png"></div>All categories connected</li>
+                        <li><div><img src="003-propiedades-css/009-landingpage/images/credit_card.png"></div>For Free</li>
+                    </ul>
+                </div>
+          
+            
+            <div class="signUpform">
+                <form action="land_thank.html">
+                    <input type="text" name="nameUser" placeholder="Pick a username" required>
+                    <input type="email" name="emailUser" placeholder="Your email" required>
+                    <input type="password" name="userPass" placeholder="Create a password" required>
+                    <p>Use at least one lowercase letter, one numeral, and seven characters.</p>
+                    <input class="signUpbutton" type="submit" value="Sign up for Phanum"> 
+                    <p>By clicking "Sign up for Phanum", you agree to our <a href="#">terms of service</a> and <a href="#">privacy policy</a>. We will send you account related emails occasionally.</p>
+                </form>
+                
+            </div> 
+        
+        </section>
+            
+        <section class="createSection">
+            
+            <div class="create">
+                <span class="subtitle">Creators & Artist</span >
+            <p>The best professional team for you, Low prices for members,Support for artists & Private studios</p>
+                 <ul>
+                    <li>150 Million of users all around the world</li>
+                    <li>65 Millions of artist working together</li>
+                    <li>Best Culture online platform 2015</li>
+
+                </ul>
+            <button class="signUpbutton">Tell me more</button> 
+            </div>
+        </section>
+            
+            <footer>
+                <div class="secondCall">
+                    <ul class="social">
+
+			<li class="facebook"><a href="#" class="entypo-facebook"></a></li>
+			<li class="twitter"><a href="#" class="entypo-twitter"></a></li>
+			<li class="dribbble"><a href="#" class="entypo-dribbble"></a></li>
+			<li class="behance"><a href="#" class="entypo-behance"></a></li>
+			<li class="linked-in"><a href="#" class="entypo-linkedin"></a></li>
+
+		</ul>
+                    
+            </footer>
+           
+
+
+
+        </main>
+        
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <form action="fichero.php" method="get">
+
+            <legend>SEARCH</legend>
+            <label>Price</label><br>
+            <select name="minp">
+                <option>MinPrice</option>
+                <option value="">10</option>
+                <option value="">20</option>
+                <option >30</option>
+            </select>
+            <select name="maxp">
+                <option>MaxPrice</option>
+                <option>100</option>
+                <option>200</option>
+                <option>300</option>
+            </select>
+            <br>
+            <label >Type</label><br>
+            <select name="homeType">
+                <option>Flat</option>
+                <option>House</option>
+                <option>Garage</option>
+                <option>Offices</option>
+            </select>
+            <br>
+            <label>Size</label><br>
+            
+            <select name="mins">
+                <option>MinSize</option>
+                <option>10m2</option>
+                <option>20m2</option>
+                <option>30m2</option>
+            </select>
+            <select name="maxs">
+                <option>MaxSize</option>
+                <option>100m2</option>
+                <option>200m2</option>
+                <option>300m2</option>
+            </select>
+            
+            <br>
+            <label>Status</label><br>
+            <select name="status">
+                <option>MaxSize</option>
+                <option>Refurnished</option>
+                <option>No furnished</option>
+                <option>300m2</option>
+            </select>
+            <br>
+            <label>Distribution</label><br>
+            <input name="distrib" type="radio" value="diaphanous">diaphanous<br>
+            <input name="distrib" type="radio" value="indifferent">indifferent<br>
+            <input name="distrib" type="radio" value="no diaphanous">no diaphanous<br>
+            <br>
+            <label>Building</label><br>
+            <input name="build" type="radio" value="victorian">Victorian<br>
+            <input name="build" type="radio" value="new">New<br>
+            <input name="build" type="radio" value="mixed">Mixed<br>
+           
+            <br>
+            <label>Rooms</label><br>
+            <input name="room1" type="checkbox" value="1">One<br>
+            <input name="room2" type="checkbox" value="2">Two<br>
+            <input name="room3" type="checkbox" value="3">Three<br>
+            
+            
+            <br>
+            <label>Features</label><br>
+            <input name="feat1" type="checkbox" value="jacuzzi">Jacuzzi<br>
+            <input name="feat2" type="checkbox" value="garage">Garage<br>
+            <input name="feat3" type="checkbox" value="lift">Elevator<br>
+            <a href="#">More features</a>
+            <br><br>
+            <label>Publised Date</label><br>
+            <input name="pdate" type="radio" value="today">Tofay<br>
+            <input name="pdate" type="radio" value="yesterday">Yesterday<br>
+            <input name="pdate" type="radio" value="lastWeek">Last week<br>
+            <br>
+            <input type="reset" value ="Borrar datos">
+        </form>
+    </body>
+</html>

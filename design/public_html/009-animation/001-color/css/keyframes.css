@@ -1,0 +1,39 @@
+/*Creamos Animaciones*/
+
+/*BACKGROUND
+##################################################*/
+@-webkit-keyframes cambiarColor{
+    from{ background:tomato;}
+    to{ background: #222;}
+}
+@-moz-keyframes cambiarColor{
+    from{  background:tomato;}
+    to{ background: #222;}
+}
+@-o-keyframes cambiarColor{
+    from{ background:tomato;}
+    to{ background: #222;}
+}
+@-ms-keyframes cambiarColor{
+    from{ background:tomato;}
+    to{ background: #222;}
+}
+@keyframes cambiarColor{
+    from{ background:tomato;}
+    to{ background: #222;}
+}
+
+/*ARCOIRIS
+##################################################*/
+@-webkit-keyframes arcoIris{
+    0%{background: red}
+    17%{background: tomato}
+    32%{background: yellow}
+    47%{background: teal}
+    62%{background: blue}
+    77%{background: purple}
+    100%{background: pink}
+}
+
+
+

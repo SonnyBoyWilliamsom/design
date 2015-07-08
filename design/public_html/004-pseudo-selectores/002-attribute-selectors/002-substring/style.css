@@ -1,0 +1,71 @@
+
+body{
+    font-family: sans-serif;
+    padding: 5%;
+}
+ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+    margin: 10px 0;
+}
+a{
+    text-decoration: none;
+}
+
+/*Selección por cadena de texto -> Substring*/
+
+/*con ^ empezamos a buscar la cadena de texto por el principio*/
+a[href^="http"]{
+    color: crimson;
+}
+a:not([href^="http"]){
+    color:teal;
+}
+a[href^="mailto"]{
+    color: crimson;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+/*con $ empezamos a buscar la cadena de texto por el final*/
+a[href$=".pdf"]{
+    background: url(images/icon-pdf.png) no-repeat;
+    padding-left: 20px;
+}
+a[href$=".doc"]{
+    background: url(images/icon-doc.png) no-repeat;
+    padding-left: 20px;
+}
+
+/*con * empezamos a buscar la cadena de texto por el medio*/
+img[src*="pict"]{
+    border:1px solid #333;
+    padding: 3px;
+    margin: 4px;
+    opacity: .7;
+}
+img[src*="pict"]:hover{
+    border: 1px solid crimson;
+    opacity: 1;
+}
+
+a[href*="facebook"]{
+    background: url(images/facebook2.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+a[href*="twitter"]{
+    background: url(images/twitter.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+a[href*="plus.google"]{
+    background: url(images/google110.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}

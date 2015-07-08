@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+body{
+    font-family: sans-serif;
+    
+   
+}
+h1{
+     color: #fff;
+    padding: 5px;
+}
+ul li{
+    list-style: none;
+    padding: 5px 25px;
+    -webkit-transition: all .8s cubic-bezier(.2,.67,.31,.93) 0s;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.box{
+    background: url(../images/cenital.jpg) no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 70%;
+    height: 70%;
+    overflow: hidden;
+}
+header{
+    background: rgba(0,0,0,.3);
+    width: 20vw;
+    height: 100%;
+    padding: 20px;
+    position: relative;
+    left: -25vw;
+    -webkit-transition: all .8s cubic-bezier(.2,.67,.31,.93) 0s;
+}
+.box:hover > header{
+    -webkit-transform: translateX(25vw);
+}
+ul li:hover{-webkit-transform: translateX(20px);}
+

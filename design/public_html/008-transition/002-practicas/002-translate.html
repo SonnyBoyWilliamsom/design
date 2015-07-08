@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                font-family: sans-serif;
+            }
+            article{
+                width: 400px;
+                height: 400px;
+                background: #000;
+                overflow: hidden;
+            }
+            
+            /*first-child :Imagen*/
+            article :first-child{
+                height: 100%;
+                background: url(http://2.bp.blogspot.com/_NKCZzYMHISE/TL8IbMYD_4I/AAAAAAAABwM/nDdzK6BhAvM/s1600/perro.jpg) no-repeat;
+                background-size: cover;
+                opacity: .7;
+                -webkit-transition: all 1s;
+            }
+            article:hover :first-child{
+                opacity: 1;
+            }
+                        
+            /*last child:texto*/
+            article :last-child{
+                height: 20%;
+                background: #222;
+                padding: 20px;
+                -webkit-transition: all 1s;
+            }
+            article :last-child:before{
+                content:"Perrito";
+                color:#fff;
+                font-size: 24px;
+                
+            }
+            article:hover :last-child{
+                -webkit-transform: translateY(-100%);
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <article>
+            <div></div>
+            <div></div>
+        </article>
+        
+        
+    </body>
+</html>

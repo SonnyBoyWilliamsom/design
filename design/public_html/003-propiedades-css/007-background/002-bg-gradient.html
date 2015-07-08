@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            header{
+                height: 50px;
+                /*background: -pre-linear-gradient(pos, color cant, color cant,...)*/
+                /*background: -pre-radial-gradient(pos, color cant, color cant,...)*/
+                /*pos -> top, right, bottom, left, 50deg, 10deg...*/
+                background: -webkit-linear-gradient(30deg,black 20%,white 50%,black 57%,tomato 100%); 
+            }
+            
+            #tornillo{
+                margin: 5% auto;
+                width: 20px;
+                height: 20px;
+                background: -webkit-linear-gradient(45deg, #666,white, #666);
+                border-radius: 50%;
+                box-shadow: 1px -1px 0 #000;
+            }
+            
+            #box{
+                width: 100px;
+                height: 100px;
+               background: #f3c5bd; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #f3c5bd 0%, #e86c57 29%, #ea2803 51%, #00778e 75%, #c72200 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#f3c5bd), color-stop(29%,#e86c57), color-stop(51%,#ea2803), color-stop(75%,#00778e), color-stop(100%,#c72200)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #f3c5bd 0%,#e86c57 29%,#ea2803 51%,#00778e 75%,#c72200 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #f3c5bd 0%,#e86c57 29%,#ea2803 51%,#00778e 75%,#c72200 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #f3c5bd 0%,#e86c57 29%,#ea2803 51%,#00778e 75%,#c72200 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #f3c5bd 0%,#e86c57 29%,#ea2803 51%,#00778e 75%,#c72200 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+            }
+            
+        </style>
+    </head>
+    <body>
+       
+        <header></header>
+        
+        <div id="tornillo"></div>
+        
+        <div id="box"></div>
+        
+    </body>
+</html>

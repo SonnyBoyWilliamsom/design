@@ -1,0 +1,36 @@
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Cabecera*/
+.tomatoBack{background: tomato;}
+
+/*Textos*/
+.centrado{
+    text-align: center;
+    font-family: sans-serif;
+}
+.derecha{
+    text-align: justify;
+  
+    color:grey;
+}
+.blanco{color: white;}
+
+/*Margins y paddings*/
+.p15{
+    padding: 15px;
+}
+.p10{
+    padding: 10px  ;
+}
+.p25{
+    padding: 25px;
+}
+.margen{
+    padding:50px;
+    font-family: sans-serif;
+    font-size:16px;
+    background: #efefef;
+}

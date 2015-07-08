@@ -1,0 +1,65 @@
+
+body{
+    font-family: sans-serif;
+}
+
+div{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    display: inline-block;
+    margin: 20px;
+    box-shadow: 0 0 5px #000;
+    background: teal;
+    color: #fff;
+}
+
+.rotate{ /*rotateX() , rotateY(), rotateZ() */
+    -webkit-transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+    -o-transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+    
+    /*transform-origin: 50% 50% , center , bottom left*/
+    -webkit-transform-origin: top left;
+    -moz-transform-origin: top left;
+    -o-transform-origin: top left;
+    -ms-transform-origin: top left;
+}
+
+.translate{ /*translateX(), translateY(), translate(x, y)*/
+    -webkit-transform: translate(50px,50px);
+    -moz-transform: translate(50px,50px);
+    -o-transform: translate(50px,50px);
+    -ms-transform: translate(50px,50px);
+}
+
+.scale{ /*scale(x,y)*/
+    -webkit-transform: scale(2,1.5) translateY(200px);
+    -moz-transform: scale(2,1.5) translateY(200px);
+    -o-transform: scale(2,1.5) translateY(200px);
+    -ms-transform: scale(2,1.5) translateY(200px);
+}
+
+.skew{ /*skew(x,y), skewX(), skeyY()*/
+    -webkit-transform: skew(10deg, 20deg);
+    -moz-transform: skew(10deg, 20deg);
+    -o-transform: skew(10deg, 20deg);
+    -ms-transform: skew(10deg, 20deg);
+}
+
+/*Perspectiva -> rotación______________*/
+section{
+    width: 150px;
+    height: 150px;
+    border:1px solid #000;
+    -webkit-perspective:300px;
+}
+article{
+    background: tomato;
+    height: 100%;
+    -webkit-transform: rotateY(45deg);
+}
+
+
