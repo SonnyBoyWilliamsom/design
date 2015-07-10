@@ -1,35 +1,75 @@
+@-webkit-keyframes moveCosta{
+    100%{background-position: -780px 30%;}
+}
+@-webkit-keyframes moveBoat{
+    100%{-webkit-transform: rotate(5deg);}
+}
+@-webkit-keyframes smoke{
+    50%{opacity: 1;}
+    80%{opacity: 0.5;}
+    100%{opacity: 0;top: -40%; left: 0%;-webkit-transform: rotate(5deg);}
+}
+@-webkit-keyframes mike{
+    100%{left: 20%;}
+}
 
 body {
-	background: #F0FCFF url('img/island.png') repeat-x right -460px;
-	background-size: 780px;
+    background: #F0FCFF url('img/island.png') repeat-x right -490px;
+    background-size: 780px;
+    background-position: 0 80%;
+
+    -webkit-animation-name: moveCosta;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: forwards;
 }
 .boat {
-	width: 380px;
-	position: absolute;
-	top: 40%;
-	left: 35%;
+    width: 380px;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+
+    -webkit-transform: rotate(-5deg);
+    -webkit-transform-origin: center;
+
+    -webkit-animation-name: moveBoat;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction:  alternate;
+    -webkit-animation-timing-function: linear;
 }
 .boat img {
-	width: 100%;
+    width: 100%;
 }
-.boat::after { /*Cada navegador que soporte el doble de dos puntos (::) sintaxis CSS3 también admite sólo el (:) sintaxis, pero IE 8 sólo es compatible con el single y coma, así que por ahora, se recomienda utilizar sólo el single y coma para mejor soporte de los navegadores.*/
-	content: "";
-	display: block;
-	width: 120px;
-	height: 120px;
-	background: url('img/steam.png') no-repeat;
-	background-size: 120px;
-	position: absolute;
-	top: -25%; /*ajustamos posición para que encaje con la chimenea del barco*/
-	left: 5%;
-	opacity: 0; /*dejamos transparente para posteriormente animarlo*/
+.boat::after { 
+    content: "";
+    display: block;
+    width: 120px;
+    height: 120px;
+    background: url('img/steam.png') no-repeat;
+    background-size: 120px;
+    position: absolute;
+
+    top: -25%; 
+    left: 5%;
+    opacity: 0; /*dejamos transparente para posteriormente animarlo*/
+
+    -webkit-animation-name: smoke;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in;
 }
 .mike {
-	width: 180px;
-	position: absolute;
-	top: 55%;
-	left: 15%;
-	-webkit-transform: rotateZ(-5deg);
+    width: 180px;
+    position: absolute;
+    top: 55%;
+    left: -14%; 
+
+    -webkit-transform: rotate(-5deg);
+
+    -webkit-animation: mike 3s 6s forwards, moveBoat 1s 3s infinite alternate;
+    -webkit-animation-timing-function: linear;
 }
+
 
 
