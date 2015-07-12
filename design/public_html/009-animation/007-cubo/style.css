@@ -1,13 +1,16 @@
 @-webkit-keyframes rotarCubo{
-    0%{-webkit-transform: rotateY(0)}
-    100%{-webkit-transform: rotateY(360deg)}
+    0%{-webkit-transform: rotateY(0) rotateX(0deg) rotateZ(360deg); 
+      }
+    100%{-webkit-transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg);
+       }
+   
 }
 
 body{
     font-family: sans-serif;
 }
 main{
-    perspective: 800px;
+    perspective: 500px;
     perspective-origin: 50% -100px;
 }
 section{
@@ -16,6 +19,7 @@ section{
     /*Para poder transladar en el eje de las Z (3D=profundidad) debo poner la propiedad transform-style diciendo que preserve esas propiedades*/
     transform-style: preserve-3d;
     -webkit-animation: rotarCubo 3s infinite linear;
+    
 }
 section:hover{
     cursor:pointer;
