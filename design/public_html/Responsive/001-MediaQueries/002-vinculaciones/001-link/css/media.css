@@ -1,0 +1,26 @@
+@media (max-width:600px){
+
+    header h1, header nav{
+        float: none;
+    }
+    header h1{
+        text-align: center;
+    }
+    header nav{
+        text-align: center;
+    }
+    header nav ul li:last-child{
+        border-right: #33ff00 solid 1px;
+    }
+
+}
+@media (max-width:480px){
+    header nav ul li{
+        display: block;
+        padding: 13px;
+        border-bottom: #33ff00 solid 1px;
+    }
+    header nav ul li:first-child{
+       border-top: #33ff00 solid 1px;
+    }
+}
