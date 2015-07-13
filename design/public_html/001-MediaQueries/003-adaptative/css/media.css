@@ -1,0 +1,48 @@
+@media (max-width: 1100px){
+    main{
+        width: 90%;
+    }
+}
+
+@media (max-width: 890px){
+    header h1, header nav{
+        float: none; 
+        text-align: center ;
+    }
+
+    section article:nth-child(3){
+       display: none;
+    }
+    section article:nth-child(1), section article:nth-child(2){
+        width: 49%;
+    }
+    
+}
+
+@media (max-width: 600px){
+    section article:nth-child(1), section article:nth-child(2){
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px){
+
+    header nav ul li{
+        display: block;
+        border-top: 1px solid #fff;
+    }
+    header nav ul li:not(:first-child){
+        padding-left: 0px;
+        margin-left: 0px;
+        border-left: none;
+
+    }
+    header{
+        padding-bottom: 0;
+        
+    }
+
+}
+
+
