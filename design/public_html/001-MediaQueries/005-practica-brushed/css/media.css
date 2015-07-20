@@ -59,3 +59,48 @@
         -webkit-transform: scale(1.05);
     }
 }
+
+@media (max-width: 630px){
+    header nav li{
+        width: 100%;
+        padding: 15px 0;
+    }
+    header nav li:nth-child(odd){
+        background:  #2F3238;
+    }
+    header nav ul{
+        display: none;
+    }
+    a#switch, a#close{
+        float: right;
+    }
+    a#switch{
+        display: block;
+    }
+    a#close{display: none;}
+    
+    #mobileMenu:target ul, #mobileMenu:target a#close{
+        display: block;
+    }
+    #mobileMenu:target a#switch{
+        display: none;
+    }
+    
+    form{
+        float: none;
+        width: 100%;  
+    } 
+    div.menu_drch{
+    float: none;
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+    
+}
+div.menu_drch h3{
+    text-align: center;
+     padding-top: 20px;
+}
+
+}
+

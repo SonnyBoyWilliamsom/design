@@ -26,6 +26,9 @@ header nav li{
     display: inline-block;
     padding-left: 40px;
 }
+a#switch, a#close{
+    display: none;
+}
 /*PORTADA===========================================*/
 div.portada{
     background: url(../img/fondo.jpg) no-repeat center;
@@ -188,8 +191,11 @@ div.portada h1{
 /*CONTACT============================================*/
 
 .formulario{
-    float: left;
-    width: 75%;  
+   overflow: hidden;
+}
+form{
+      float: left;
+     width: 65%;  
 }
 input, textarea{
     background: #26292e;

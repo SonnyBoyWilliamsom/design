@@ -1,0 +1,176 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+html, body{height: 100%;}
+body{
+    font: 1em/1.5 sans-serif;
+}
+main{
+    width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+li{list-style: inside;}
+/*==HEADER=======================================================*/
+header{
+    background: #ccffcc;
+}
+header nav{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+header nav h1{
+    background: url(img/logo.png) no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 80px;
+    padding: 5px 0;
+    float: left;
+}
+header nav ul{
+    float: right;
+}
+header nav ul li{
+    background: tomato;
+    color: #fff;
+    margin: 5px;
+    border-radius: 5px;
+    list-style: none;
+    display: inline-block;
+    padding: 10px; 
+    
+}
+
+/*==Preprocessors==================================================*/
+section#processors{
+    width: 70%;
+    float: left;
+    padding-right: 10%;
+}
+section#processors h2{
+    padding-top: 30px ;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+section#processors p{
+    line-height: 1.5em;
+    padding-bottom: 15px;
+}
+section#processors p:last-child{
+    padding-bottom: 20px;
+}
+section#processors img{
+    width: 100%;
+    border: 3px solid #000;
+}
+/*div.imgCss{
+    background: url(img/css.jpg) no-repeat;
+    background-size: contain;
+    height: 208px;
+    width
+    border: 2px solid #000;
+}*/
+section#processors h3{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #6699ff;
+    padding: 0px 0;
+}
+
+/*==Horizontal Line===============================================*/
+hr{
+    padding-bottom: 20px;
+    border: 0;
+    border-top: 4px solid #000;
+}
+
+/*==COMMENTS===============================================*/
+section#comments span.commentsTitle{
+    font-weight: bold;
+    font-size: 1.2em;
+    
+}
+
+section#comments div.comment{
+    overflow: hidden;
+}
+section#comments div.comment img{
+    width: 60px;
+    float: left;
+    width: 5%;
+    border: none;
+}
+section#comments div.comment div.textComment{
+    float: right;
+    width: 92%;
+    padding-left: 15px;
+}
+section#comments div.comment div.textComment span.userName{
+    font-weight: bold;
+    color: #6699ff;
+}
+
+/*ASIDE=============================================*/
+aside{
+    float: left;
+    width: 30%;
+    background: #6699ff;
+    margin-top: 25px;
+    padding: 20px;
+    color: #fff;
+    border-radius: 5px;
+      margin-bottom: 20px;
+}
+aside form{
+    padding: 20px;
+}
+aside form input{
+    background: #fff url(img/icon-search.png) no-repeat left center;
+    background-size: 30px;
+    padding: 10px;
+    padding-left: 35px;
+    width: 100%;
+    border-radius: 35px;
+    font-size: 1.3em;
+}
+aside p{
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+aside ul li p{
+    padding-left: 40px;
+}
+
+/*FOOTER======================================================*/
+footer{
+  
+    background: #cdcdcd;
+    width: 80%;
+    margin: 0 auto; 
+    height: 55px;
+    border-radius: 5px;
+}
+
+/*MEDIA=========================================================================================================================*/
+
+@media (max-width: 800px){
+    header nav ul{
+    width: 100%;
+}
+header nav ul li{
+    display: block;
+    text-align: center;
+}
+
+/*Search inside header!!!*/
+aside form{
+    position: absolute;
+    top: 0;
+    right: 8%;
+}
+section#processors{
+    width: 100%;
+}
+aside{
+    width: 100%;
+}
+}
