@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+           
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html{height: 100%;}
+            body{
+                background: rgba(107,140,166,.15);
+                font: 1em/1.5 sans-serif;
+                height: 100%;
+            }
+            main{
+                max-width: 980px;
+                margin: 0 auto;
+            }
+            header{
+                background: rgba(107,140,166,.3);
+                color: #fff;
+                padding-left: 25px;
+                line-height: 32px;
+                overflow: hidden;
+                
+            }
+            header a,  header nav ul li {
+                text-decoration: none;
+                color: #fff;
+                display: inline-block;
+            }
+            a.logo{
+                background: url(native-instruments-logo.png) no-repeat bottom;
+                background-size: contain;
+                width: 100px;
+                height: 50px;
+                margin-top: 10px;
+            }
+           
+            header nav{
+                float: right;
+                color: #000;
+            }
+            header nav ul li {
+                list-style: none; 
+            }
+            header nav ul li a{
+                padding: 23px;
+            }
+            header nav ul li a:hover{
+                 background: rgba(107,140,166,.5);
+            }
+            header div#menuCall{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+            div#menuCall{
+                position:absolute;
+                top: 0;}
+            header a#close, header a#call{
+                position: relative;
+                display: none;
+                padding: 20px;
+                top: 0;
+                right: 0
+              
+            }
+           
+            /*Media==================================*/
+            
+            @media (max-width: 800px){
+                main{width: 95%}
+                header{
+                    text-align: center;
+                    padding-left: 0;
+                }
+                a.logo, header nav{
+                    width: 100%;
+                }     
+
+            }
+            @media (max-width: 480px){
+                header nav ul li, header nav ul li a {
+                    width: 100%;
+                }
+                header nav ul li a{
+                   background: rgba(107,140,166,.3);
+                   padding: 5%;
+                   margin-top: 5px;
+                } 
+                header nav ul{display: none;}
+                header a#call{display: block;}
+                
+                #menu:target ul, #menu:target a#close{display: block;}
+                #menu:target a#call{
+                    display: none;
+                }
+               
+
+
+            }
+            
+        </style>
+    </head>
+    <body>
+        <main>
+        <header>
+            <a class="logo" href="menu.html"></a>
+            
+            <nav id="menu">
+                <div id="menuCall">
+                    <a id="call" href="#menu">Menu</a>
+                    <a id="close" href="#">X</a>
+                </div>
+                <ul>
+                    <li><a href="menu.html">Home</a></li>
+                    <li><a href="menu.html">Blog</a></li>
+                    <li><a href="menu.html">Services</a></li>
+                    <li><a href="menu.html">Shop</a></li>
+                </ul>
+            </nav>
+        </header>
+        </main>
+    </body>
+</html>

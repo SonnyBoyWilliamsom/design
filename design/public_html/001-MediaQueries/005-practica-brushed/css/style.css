@@ -67,7 +67,7 @@ div.portada h1{
 .content{
     width: 1200px;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 36px 0;
     overflow: hidden;
 }
 .content h2{
@@ -105,17 +105,139 @@ div.portada h1{
 .gallery{
     float: right;
     width: 75%;
+}  
+.gallery_view{
+    float: left;
+    width: 33.3333%;
+    height: 280px;
+    display: table;
+    background-position: center;
+    padding: 10px;
+    cursor: pointer;
+    -webkit-transform: scale(0.95);
+    -webkit-transition: all 0.2s;
 }
+.gallery_view:first-child{
+    background: url(../img/projects/snowRoad.jpg) no-repeat;
+    background-position: center;
+}
+.gallery_view:nth-child(2){
+    background: url(../img/projects/submarineMan.jpg) no-repeat;
+    background-position: center;
+}
+.gallery_view:nth-child(3){
+    background: url(../img/projects/harbour.jpg) no-repeat;
+    background-position: center;
+}
+.gallery_view:nth-child(4){
+    background: url(../img/projects/_MG_3631mesabar1.jpg) no-repeat;
+    background-position: center;
+}
+.gallery_view:nth-child(5){
+    background: url(../img/projects/file000103261995.jpg) no-repeat;
+    background-position: center;
+}
+.gallery_view:nth-child(6){
+    background: url(../img/projects/ramla.JPG) no-repeat;
+    background-position: center;
+}
+.gallery_view:nth-child(7){
+    background: url(../img/projects/sultan-abdul-samad-building.png) no-repeat;
+    background-position: center;
+}
+.gallery_view:nth-child(8){
+    background: url(../img/projects/unprofound_red_2.jpg) no-repeat;
+    background-position: center;
+}
+
+.gallery_view:last-child{
+    background: url(../img/projects/joey_album_my_favorite_things.jpg) no-repeat;
+    background-position: center;
+}
+
+.gallery_view h3{
+    background: rgba(255,255,255,.7);   
+    font-weight: 700;
+    color: #26292e;
+    display: table-cell;
+    vertical-align: middle;
+    -webkit-transition: all 0.2s;
+}
+.gallery_view:hover{
+
+    -webkit-transform: scale(1.05);
+}
+.gallery_view h3:hover{
+    background: rgba(255,255,255,0.1);   
+}
+/*
 .gallery_view{
     float: left;
     width: 33.33333%;
     padding: 0 0 25px 25px;
-}
+    height: 300px;
+    overflow: hidden;
+}*/
 //Si la imagen esta dentro de un div, esta tomará su tamaño inicial sin importar el tamaño del div que lo contiene. Para ajustar el tamaño de la imagen al tamaño de su padre hay que especificar el ancho de la misma
-.gallery_view img{
+/*.gallery_view img{
     width: 100%;
+    height: 100
+    
+}*/
+
+/*CONTACT============================================*/
+
+.formulario{
+    float: left;
+    width: 75%;  
+}
+input, textarea{
+    background: #26292e;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 1px;
+    color: #fff;
+    font-weight: 100;
+    border: none;
+}
+::-webkit-input-placeholder{
+    color: #cdcdcd;
+    font-weight: lighter;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #cdcdcd;
+    font-weight: lighter;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #cdcdcd;
+    font-weight: lighter;
+}
+
+:-ms-input-placeholder {  
+    color: #cdcdcd;
+    font-weight: lighter; 
+}
+input[type=submit]{
+    background: #fff;
+    width: 200px;
+    color: #26292e;
+    font-weight: 100;
+    font-size: 1.1em;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+div.menu_drch{
+    float: right;
+    width: 25%;
+    padding-left: 50px;
+}
+div.menu_drch h3{
+    text-align: left;
 }
 /*ABOUT US============================================*/
+
 div.three_columns{
     width: 32%;
     float: left;
@@ -125,12 +247,12 @@ div.three_columns:nth-child(4){
     margin-right: 2%;
 }
 div.three_columns img{
-    width: 100%;
+    width: 100%; 
 }
 div.three_columns h4{
     font-weight: 200;
     font-size: 1.4em;
-     padding: 20px 0;
+    padding: 20px 0;
 }
 div.three_columns p{
     color: #999;
@@ -158,4 +280,3 @@ li[class=facebook]{
 li[class=google]{
     background: url(../img/iconos/icon_38318.png) no-repeat;
 }
-/*HEADER============================================*/

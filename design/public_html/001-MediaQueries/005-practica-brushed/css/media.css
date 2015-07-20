@@ -1,10 +1,61 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 15-jul-2015, 8:42:03
-    Author     : formador
-*/
 
+
+@media (max-width: 1200px){
+    /*HEADER========================================*/
+    header h1, header nav{
+        width: 100%;
+        text-align: center;
+    }
+    
+    /*CONTENT=======================================*/
+    .content{
+        width: 90%;
+        padding-top: 90px;
+    }
+    .content h3{
+        padding-bottom: 20px;
+    }
+    
+    /*OUR WORK======================================*/
+    .menu_izq, .gallery{
+        width: 100%;
+        text-align: center;
+    }
+    .menu_izq li{
+        display: inline-block;
+        padding: 0 20px 30px 20px;
+    }
+    .menu_izq h4{
+       display: none;
+    }  
+    .gallery_view:first-child{
+       background-size: cover;
+        width: 100%;
+        -webkit-transform: scale(.97);
+    }
+    .gallery_view:nth-child(2){
+       background-size: cover;
+       
+    }
+    .gallery_view{
+       width: 50%;
+       
+    }
+}
+@media (max-width: 800px){
+    div.three_columns, div.three_columns:nth-child(4){
+        width: 80%;
+        float: none;
+        margin: 0 auto;
+    }
+    .gallery_view, .gallery_view:first-child{
+        float: none;
+        width: 80%;
+        margin: 0 auto;
+        -webkit-transform: initial;
+    }
+    .gallery_view:hover{
+
+        -webkit-transform: scale(1.05);
+    }
+}
