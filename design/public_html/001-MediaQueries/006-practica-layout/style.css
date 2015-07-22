@@ -4,7 +4,7 @@ body{
     font: 1em/1.5 sans-serif;
 }
 main{
-    width: 80%;
+    width: 976px;
     overflow: hidden;
     margin: 0 auto;
 }
@@ -14,7 +14,7 @@ header{
     background: #ccffcc;
 }
 header nav{
-    width: 80%;
+    width: 976px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -37,9 +37,7 @@ header nav ul li{
     list-style: none;
     display: inline-block;
     padding: 10px; 
-    
 }
-
 /*==Preprocessors==================================================*/
 section#processors{
     width: 70%;
@@ -51,11 +49,7 @@ section#processors h2{
     font-weight: bold;
     font-size: 2.5em;
 }
-section#processors p{
-    line-height: 1.5em;
-    padding-bottom: 15px;
-}
-section#processors p:last-child{
+section#processors h2+p{
     padding-bottom: 20px;
 }
 section#processors img{
@@ -75,7 +69,12 @@ section#processors h3{
     color: #6699ff;
     padding: 0px 0;
 }
-
+article{
+    padding-top: 20px;
+}
+article.conclusion p{
+    padding-bottom: 20px;
+}
 /*==Horizontal Line===============================================*/
 hr{
     padding-bottom: 20px;
@@ -87,7 +86,6 @@ hr{
 section#comments span.commentsTitle{
     font-weight: bold;
     font-size: 1.2em;
-    
 }
 
 section#comments div.comment{
@@ -108,7 +106,6 @@ section#comments div.comment div.textComment span.userName{
     font-weight: bold;
     color: #6699ff;
 }
-
 /*ASIDE=============================================*/
 aside{
     float: left;
@@ -118,7 +115,7 @@ aside{
     padding: 20px;
     color: #fff;
     border-radius: 5px;
-      margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 aside form{
     padding: 20px;
@@ -139,38 +136,41 @@ aside p{
 aside ul li p{
     padding-left: 40px;
 }
-
 /*FOOTER======================================================*/
 footer{
-  
+
     background: #cdcdcd;
-    width: 80%;
+    width: 90%;
     margin: 0 auto; 
     height: 55px;
     border-radius: 5px;
 }
-
 /*MEDIA=========================================================================================================================*/
-
-@media (max-width: 800px){
+@media (max-width: 976px){
     header nav ul{
-    width: 100%;
-}
-header nav ul li{
-    display: block;
-    text-align: center;
-}
+        width: 100%;
+    }
+    header nav {
+        width: 90%;
+    }
+    header nav ul li{
+        display: block;
+        text-align: center;
+    }
 
-/*Search inside header!!!*/
-aside form{
-    position: absolute;
-    top: 0;
-    right: 8%;
-}
-section#processors{
-    width: 100%;
-}
-aside{
-    width: 100%;
-}
+    /*Search inside header!!!*/
+    main{
+        width: 90%;
+    }
+    aside form{
+        position: absolute;
+        top: 0;
+        right: 3%;
+    }
+    section#processors{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
 }
