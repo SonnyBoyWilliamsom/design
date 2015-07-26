@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://localhost:8888/loginJairo/views/profile.php# -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <title>Phanum | Profile</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{margin: 0; padding: 0; box-sizing: border-box;}
+            html,body{height: 100%;}
+            body{
+                font: 1em/1.5 sans-serif;
+              
+            }
+            a{text-decoration: none; color: #141414;}
+            header{
+                background: #fff;
+                width: 975px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+            header nav h1{
+                background: url(../img/logo.png) no-repeat left center;
+                background-size: 180px;
+                width: 200px;
+                height: 100px;
+                float: left;
+                margin-left: 20px;
+            }
+            header nav ul{
+                color: #141414;
+                float: right;
+            }
+            header nav ul li{
+                list-style: none;
+                display: inline-block;
+                text-transform: uppercase;
+/*                line-height: 100px;*/
+               
+            }
+            header nav ul li a{
+                display: inline-block;
+                padding: 38px;
+                
+            
+            }
+            
+            header nav ul li a:hover{
+                background: #141414;
+                color: #fff; 
+            }
+            
+           
+            header nav ul li:last-child ul.menuProfile li{
+                display: block;
+                
+            }
+            header nav ul li:last-child ul.menuProfile li a{
+                padding: 5px;
+                color: #fff;
+                border-bottom: 2px solid #141414;
+            }
+            header nav ul li:last-child ul.menuProfile li a:hover{
+                border-bottom: 2px solid #fff;
+            }
+            a#end, ul.menuProfile{
+                display: none;
+            }
+            /*Simbolos positivo y negativo del menu extensible de perfil*/
+            span{
+                position: relative;
+                top: -1px;
+                display:inline-block;
+            }
+            /*Desplegamos el menu usando target*/
+            #profileMenu:target a#end, #profileMenu:target ul.menuProfile{
+                display: block;
+            }
+            #profileMenu:target a#call{
+                display: none;
+            }
+            ul.menuProfile{
+                background: #141414;
+                padding: 5px;
+             
+            }
+            
+        </style>
+    <style type="text/css"></style></head>
+    <body cz-shortcut-listen="true">
+        <header>
+            <nav>
+                <h1></h1>
+                <ul>
+                    <li><a href="./Phanum _ Profile_files/Phanum _ Profile.html">Mejorar cuenta</a></li>
+                    <li><a href="./Phanum _ Profile_files/Phanum _ Profile.html">Ayuda</a></li><li><a href="./Phanum _ Profile_files/Phanum _ Profile.html">Descargar</a></li>
+                    <li id="profileMenu">
+                        <a href="http://localhost:8888/loginJairo/views/profile.php#profileMenu" id="call">Profile <span>+</span></a>
+                        <a href="./Phanum _ Profile_files/Phanum _ Profile.html" id="end">Profile <span>-</span></a>
+                        <ul class="menuProfile">
+                            <li><a href="./Phanum _ Profile_files/Phanum _ Profile.html">Edit</a></li>
+                            <li><a href="http://localhost:8888/loginJairo/views/profile.php?action=logout">Log out</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+
+</body></html>
