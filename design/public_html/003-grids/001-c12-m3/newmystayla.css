@@ -1,0 +1,43 @@
+/*GLOBAL========================================*/
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{font:1em/1.5 sans-serif;}
+a{text-decoration: none;}
+li{list-style: none;}
+
+/*COLUMNS=======================================*/
+
+section{
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto 1%;
+}
+[class^="col"]{
+    background: #ededed;
+    margin-right: 3%;
+    margin-bottom: 1%;
+    background: #ededed;
+    height: 20px;
+    float: left;
+}
+[class^="col"]:last-child{
+    margin-right: 0%;
+}
+/*Tamaño de la columna unitaria (sin su margen respectivo):
+como queremos 3% de medianil:
+(100%+margin)/12=8.58% (tamaño de la columna con el margen incluido)
+8.58%-3%=5.58% (tamaño de la columna sin el margen)
+*/
+.col1{/*8.58 - margin*/width: 5.58%;}
+.col2{/*17.16 - margin*/width: 14.16%;}
+.col3{/*25.74 - margin*/width: 22.74%;}
+.col4{/*34.32 - margin*/width: 31.32%;}
+.col5{/*42.9 - margin*/width: 39.9%;}
+.col6{/*51.48 - margin*/width: 48.48%;}
+.col7{/*60.06 - margin*/width: 57.06%;}
+.col8{/*68.64 - margin*/width: 65.64%;}
+.col9{/*77.22 - margin*/width: 74.22%;}
+.col10{/*85.8 - margin*/width: 82.8%;}
+.col11{/*94.38 - margin*/width: 91.38%;}
+.col12{/*102.99 - margin (en realidad tendría que ser el 103% - margin)*/width: 100%;}
+
+
