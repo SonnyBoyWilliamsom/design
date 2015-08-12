@@ -22,9 +22,8 @@ section{
 }
 
 /*Selector para aplicar propiedades a los elementos que son referenciados o llamados por anclas*/
-:target{
+section:target{
     background: tomato;
     color:#fff;
     padding: 20px;
 }
-

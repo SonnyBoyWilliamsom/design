@@ -4,25 +4,25 @@
             
             /*============GENERAL=======================================================*/
             @font-face {
-    font-family: 'belleroselight';
-    src: url('bellerose-webfont.eot');
-    src: url('bellerose-webfont.eot?#iefix') format('embedded-opentype'),
-         url('bellerose-webfont.woff2') format('woff2'),
-         url('bellerose-webfont.woff') format('woff'),
-         url('bellerose-webfont.ttf') format('truetype'),
-         url('bellerose-webfont.svg#belleroselight') format('svg');
-    font-weight: normal;
-    font-style: normal;
+                font-family: 'bellerose';
+                src: url('../fonts/bellerose/bellerose.eot');
+                src: url('../fonts/bellerose/bellerose.eot') format('embedded-opentype');
+                src: url('../fonts/bellerose/bellerose.woff2') format('woff2');
+                src: url('../fonts/bellerose/bellerose.woff') format('woff');
+                src: url('../fonts/bellerose/bellerose.ttf') format('truetype');
+                src: url('../fonts/bellerose/bellerose.svg') format('svg');
+        
 
-}
+
+            }
             @font-face{
                 font-family: 'champagne';
-                src: url(fonts/champagne/champagne.eot);
-                src: url(fonts/champagne/champagne.eot) format('embedded-opentype');
-                src: url(fonts/champagne/champagne.woff2) format('woff2');
-                src: url(fonts/champagne/champagne.woff) format('woff');
-                src: url(fonts/champagne/champagne.svg) format('svg');
-                src: url(fonts/champagne/champagne.ttf) format('truetype');
+                src: url(../fonts/champagne/champagne.eot);
+                src: url(../fonts/champagne/champagne.eot) format('embedded-opentype');
+                src: url(../fonts/champagne/champagne.woff2) format('woff2');
+                src: url(../fonts/champagne/champagne.woff) format('woff');
+                src: url(../fonts/champagne/champagne.svg) format('svg');
+                src: url(../fonts/champagne/champagne.ttf) format('truetype');
             }
             *{margin: 0; padding: 0; box-sizing: border-box;}
             html{height: 100%;}
@@ -34,10 +34,15 @@
             }
             a{text-decoration: none; color: #fff; font-weight: lighter;}
             div#header h1{
+                font-family: 'champagne', sans-serif;
+                text-transform: uppercase;
+                font-size: 3em;
                 color: red;
             }
             /*============MAIN CONTAINER================================================*/
             main.container{
+                font-family: 'champagne', sans-serif;
+                font-size: 1.2em;
                 height: 777px;
                 width: 100%;
                 display: table-cell;
@@ -47,6 +52,7 @@
             /*============CONTENT=======================================================*/
             div.main{
                 background: #cdcdcd;
+               font-family: 'champagne', sans-serif;
                 width: 1253px;
                 height: 772px;
                 margin: 0 auto;
@@ -71,11 +77,12 @@
                 vertical-align: middle;
             }
             div.main a{
+                
                 display: block;
                 padding: 40% 0;
             }
             .uno{
-                background: #00ff33;
+                background: #00778e;
                 width: 37px;
                 height: 37px;
                 position: relative;
@@ -168,4 +175,8 @@
             }
             .veintiuno:hover{
                  -webkit-transform: translate(0,10%);
+            }
+            
+            img [alt="serie"]{
+                
             }

@@ -12,8 +12,8 @@ a{
 
 /*Pseudo-elements*/
 
-/*Código ascii en representación de icono*/
-.phone:before{
+/*CÃ³digo ascii en representaciÃ³n de icono*/
+.phone:after{
     content: "\2706";
     color:royalblue;
     font-size: 2em;

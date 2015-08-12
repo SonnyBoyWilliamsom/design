@@ -38,42 +38,42 @@ li{
     color:#fff;
 }*/
 
-ul li:nth-child(2n+2){ /*orden descendente*/
-    background: #ccc;
+ul li:nth-child(2n+3){ /*orden descendente*/
+    background: red;
 }
-ul li:hover:nth-child(2n+2){ 
+/*ul li:hover:nth-child(2n+2){ 
     background: #ededed;
-}
+}*/
 
-ul li:nth-last-child(2n+2){ /*orden ascendente LAST*/
+/*ul li:nth-last-child(2n+2){ orden ascendente LAST
     background: #ededed;
-}
-ul li:hover:nth-last-child(2n+2){ 
+}*/
+/*ul li:hover:nth-last-child(2n+2){ 
     background: #ccc;
-}
-
-/*El HIJO del article  que ocupe la posición indicada, independientemente de la etiqueta que sea*/
+}*/
+/*
+El HIJO del article  que ocupe la posición indicada, independientemente de la etiqueta que sea
 article :nth-child(2){
     color: tomato;
-}
+}*/
 
 
 /*ul li:nth-child(1){
     background: teal;
 }*/
-ul li:first-child{
+/*ul li:first-child{
    background: #000; 
    text-align: center;
    list-style: none;
    text-transform: uppercase;
    color:#fff;
 }
-/*ul li:nth-last-child(1){
+ul li:nth-last-child(1){
     background: teal;
-}*/
+}
 ul li:last-child{
    background: #000;
    color:#fff;
-}
+}*/
 
 
