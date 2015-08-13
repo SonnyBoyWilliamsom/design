@@ -1,0 +1,17 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+html{height: 100%}
+body{height: 100%; font: 1.5em/2 sans-serif;}
+a{text-decoration: none; color: tomato;}
+
+/*====HEADER============================================================================*/
+header{background: #F6E9D9;}
+header div.headerLogo h1{
+    width: 200px;
+    height: 200px;
+    background: url(../img/02.jpg) no-repeat center;
+    background-size: 846px;
+    background-position: -40px -40px;
+    text-align: center;
+    margin: 0 auto;
+}
+

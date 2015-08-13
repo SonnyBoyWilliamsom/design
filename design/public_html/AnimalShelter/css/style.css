@@ -1,0 +1,147 @@
+/*====FONTS=============================================================================*/
+@import url(http://fonts.googleapis.com/css?family=Poiret+One|Lobster);
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+html{height: 100%}
+body{height: 100%; font: 1.5em/2 sans-serif;}
+a{text-decoration: none; color: tomato;}
+
+body{ font-family: 'Poiret One', cursive;}
+main{height: 100%;}
+a{-webkit-transition: all 0.4s;}
+/*====HEADER============================================================================*/
+header{background: #F6E9D9;}
+header div.headerLogo a{
+    display: block;
+    width: 200px;
+    height: 180px;
+    background: url(../img/02.jpg) no-repeat center;
+    background-size: 846px;
+    background-position: -51px -65px;
+    text-align: right;
+    margin: 0 auto;
+    vertical-align: baseline;
+}
+
+header div.headerLogo h1{
+    font-size: 1.2em;
+    color: #F2907B;
+    border-bottom: 1px dotted #F2907B;
+    border-top: 1px dotted #F2907B;
+    text-align: center;
+    margin: 0 auto;
+    width: 965px;
+    text-shadow: 1px 1px 5px #cdcdcd;
+}
+header nav{
+    text-align: center;
+}
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li a{
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #5DB5AA;
+     text-shadow: 1px 1px 5px #cdcdcd;
+}
+header nav ul li a:hover{
+    background: #5DB5AA;
+    color:  #F6E9D9;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px #5DB5AA;
+}
+/*====MAIN SLIDER=======================================================================*/
+
+div.mainSlider{
+    background: url(../img/animals.jpg) fixed;
+    background-position: 0px 259px;
+    background-size: cover;
+    height: 66%;
+    width: 100%;
+    display: table;
+}
+div.mainSlider div.mainSliderIn {
+    background: rgba(255,255,255, 0.8);
+    background-position: 0px 260px;
+    height: 100%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+div.mainSlider div.mainSliderIn h2{
+    font-family: 'Lobster', cursive;
+    font-size: 4em;
+    color:#5DB5AA;
+    text-shadow: 1px 1px 2px #000;
+}
+div.mainSlider div.mainSliderIn p{
+    font-size: 2em;
+    color: #F2907B;
+    text-shadow: 1px 1px 5px #5DB5AA;
+}
+div.mainSlider div.mainSliderIn p span{
+    font-family: 'Lobster', cursive;
+    text-shadow: none;
+}
+/*====CONTENIDO===========================================*/
+div.contenido{//Cada seccion esta contenida en este div, de tal manera que se consigue el background de un color y el contenido de la sección en un tamaño fijo
+    margin: 0 auto;
+    overflow: hidden;
+   
+}
+div.contenido:nth-child(4){
+    background: url(../img/patternBkGRND.jpg);
+}
+section div{
+    overflow: hidden;
+    margin-top: 5px;
+}
+section{
+    width: 955px;
+    margin: 0 auto;
+}
+
+/*====CELDAS=WIDTH:960px, margin:5px, 12columns===========================*/
+div.col{
+    background: red;
+    height: 200px;
+    float: left;
+}
+div.col:not(:first-child) {margin-left: 5px;}
+
+.uno{
+    width: 75px;
+}
+.dos{
+    width: 155px;
+}
+.tres{
+    width: 235px;
+}
+.cuatro{
+    width: 315px;
+}
+.seis{
+    width: 475px;
+}
+.doce{
+    width: 955px;
+    margin:  0 auto;
+}
+
+
+
+/*====SECTION-NUESTRAS MASCOTAS===========================================*/
+
+
+
+/*====FOOTER==============================================================*/
+footer{
+    background: url(../img/patternBkGRND.jpg);
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+ 
