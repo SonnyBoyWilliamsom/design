@@ -1,182 +1,209 @@
- /*Initial width: 1250px. Partition Grid: 34. Marging between grids: 5px. Useful layout: 1253px -(33*5px) = 1088px. Grid size: 1088/34 = 32px*/
-            /*Margen establecido finalmente es nulo. Luego escogiendo una ancho de 1258 el grid minimo es de 37*/
-            /*Para la altura seguimos el mismo proceso pero no estableceremos margen alguno: 777px / 21 =  */
-            
-            /*============GENERAL=======================================================*/
-            @font-face {
-                font-family: 'bellerose';
-                src: url('../fonts/bellerose/bellerose.eot');
-                src: url('../fonts/bellerose/bellerose.eot') format('embedded-opentype');
-                src: url('../fonts/bellerose/bellerose.woff2') format('woff2');
-                src: url('../fonts/bellerose/bellerose.woff') format('woff');
-                src: url('../fonts/bellerose/bellerose.ttf') format('truetype');
-                src: url('../fonts/bellerose/bellerose.svg') format('svg');
-        
+/*Initial width: 1250px. Partition Grid: 34. Marging between grids: 5px. Useful layout: 1253px -(33*5px) = 1088px. Grid size: 1088/34 = 32px*/
+/*Margen establecido finalmente es nulo. Luego escogiendo una ancho de 1258 el grid minimo es de 37*/
+/*Para la altura seguimos el mismo proceso pero no estableceremos margen alguno: 777px / 21 =  */
+
+/*============GENERAL=======================================================*/
+@font-face {
+    font-family: 'bellerose';
+    src: url(../fonts/bellerose/bellerose.eot);
+    src: url(../fonts/bellerose/bellerose.eot) format('embedded-opentype');
+    src: url(../fonts/bellerose/bellerose.woff2) format('woff2');
+    src: url(../fonts/bellerose/bellerose.woff) format('woff');
+    src: url(../fonts/bellerose/bellerose.ttf) format('truetype');
+    src: url(../fonts/bellerose/bellerose.svg) format('svg');
 
 
-            }
-            @font-face{
-                font-family: 'champagne';
-                src: url(../fonts/champagne/champagne.eot);
-                src: url(../fonts/champagne/champagne.eot) format('embedded-opentype');
-                src: url(../fonts/champagne/champagne.woff2) format('woff2');
-                src: url(../fonts/champagne/champagne.woff) format('woff');
-                src: url(../fonts/champagne/champagne.svg) format('svg');
-                src: url(../fonts/champagne/champagne.ttf) format('truetype');
-            }
-            *{margin: 0; padding: 0; box-sizing: border-box;}
-            html{height: 100%;}
-            body{
-                font: 1em/1.5 sans-serif;
-                width: 100%;
-                height: 100%;
-                display: table;
-            }
-            a{text-decoration: none; color: #fff; font-weight: lighter;}
-            div#header h1{
-                font-family: 'champagne', sans-serif;
-                text-transform: uppercase;
-                font-size: 3em;
-                color: red;
-            }
-            /*============MAIN CONTAINER================================================*/
-            main.container{
-                font-family: 'champagne', sans-serif;
-                font-size: 1.2em;
-                height: 777px;
-                width: 100%;
-                display: table-cell;
-                vertical-align: middle;
-            }
-            
-            /*============CONTENT=======================================================*/
-            div.main{
-                background: #cdcdcd;
-               font-family: 'champagne', sans-serif;
-                width: 1253px;
-                height: 772px;
-                margin: 0 auto;
-                position: relative;
-                overflow: hidden;
-                -webkit-perspective:300px;
-               
-            }
-            
-            div#header, div#footer{
-                text-align: center;
-            }
-            div.serie{
-                float: left;
-                display: table;
-                -webkit-transition: all .4s;
-            }
-          
-            div.serie h2, div.serie h3{
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-            div.main a{
-                
-                display: block;
-                padding: 40% 0;
-            }
-            .uno{
-                background: #00778e;
-                width: 37px;
-                height: 37px;
-                position: relative;
-                bottom: -74px;
-                right: 74px;
-                z-index: -1;
-            }
-            div.main .uno h3 a{
-                display: block;
-                padding: 0;
-            }
-            div.main .uno a{
-                display: block;
-                padding: 30% 0;
-            }
-            .uno:first-child{
-                margin-left: 0;
-            }
-            .dos{
-                
-                background: #3366ff;
-                width: 74px;
-                height: 74px;
-            }
-            div.main .dos a{
-                display: block;
-                padding: 20% 0;
-            }
-            .dos:hover{
-                -webkit-transform: scale(1.3);
-            }
-            .tres{
-                
-                background: #999999;
-                width: 111px;
-                height: 111px;
-                z-index: -1;
-            }
-            div.main .tres a{
-                display: block;
-                padding: 30% 0;
-            }
-            .tres:hover{
-                -webkit-transform: scale(.9);
-            }
-            .cinco{
-                
-                background: #ff9400;
-                width: 185px;
-                height: 185px;
-                position: absolute;
-                bottom: 0;
-                right: 291px;
-                -webkit-transform-origin: top right;
-               
-            }
-             div.main .cinco a{
-                display: block;
-                padding: 20% 0;
-            }
-            .cinco:hover{
-                -webkit-transform: rotate(25deg);
-            }
-            .ocho{
-                
-                background: #00cccc;
-                width: 291px;
-                height: 296px;
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                 
 
-            }
-            .ocho:hover{
-                -webkit-transform: translate(0, 20%);
-            }
-            .trece{
-                background: #cc00cc;
-                width: 476px;
-                height: 476px;
-            }
-            .trece:hover{
-                 -webkit-transform: translate(15%,0);
-            }
-            .veintiuno{
-                background: #0099cc;
-                width: 777px;
-                height: 772px;
-            }
-            .veintiuno:hover{
-                 -webkit-transform: translate(0,10%);
-            }
-            
-            img [alt="serie"]{
-                
-            }
+}
+@font-face{
+    font-family: 'champagne';
+    src: url(../fonts/champagne/champagne.eot);
+    src: url(../fonts/champagne/champagne.eot) format('embedded-opentype');
+    src: url(../fonts/champagne/champagne.woff2) format('woff2');
+    src: url(../fonts/champagne/champagne.woff) format('woff');
+    src: url(../fonts/champagne/champagne.svg) format('svg');
+    src: url(../fonts/champagne/champagne.ttf) format('truetype');
+}
+*{margin: 0; padding: 0; box-sizing: border-box;}
+html{height: 100%;}
+body{
+    background: url(triangle.png) no-repeat center;
+    background-size: cover; 
+    font: 1em/1.5 sans-serif;
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+a{text-decoration: none; color: #fff; font-weight: lighter;}
+div#header h1{
+    font-family: 'champagne', sans-serif;
+    text-transform: uppercase;
+    font-size: 3em;
+
+}
+/*============MAIN CONTAINER================================================*/
+main.container{
+    font-family: 'champagne', sans-serif;
+    font-size: 1.2em;
+    height: 777px;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*============CONTENT=======================================================*/
+div.main{
+
+    font-family: 'champagne', sans-serif;
+    width: 1253px;
+    height: 772px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    -webkit-perspective:300px;
+
+}
+
+div#header, div#footer{
+    text-align: center;
+    color: #fff;
+}
+div.serie{
+    float: left;
+    display: table;
+    -webkit-transition: all .4s;
+}
+
+div.serie h2, div.serie h3{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+div.main a{
+
+    display: block;
+    padding: 40% 0;
+}
+.uno{
+    background: #00778e;
+    width: 37px;
+    height: 37px;
+    position: relative;
+    bottom: -74px;
+    right: 74px;
+    z-index: -1;
+}
+div.main .uno h3 a{
+    display: block;
+    padding: 0;
+}
+div.main .uno a{
+    display: block;
+    padding: 30% 0;
+}
+.uno:first-child{
+    margin-left: 0;
+}
+.dos{
+
+    background: #3366ff;
+    width: 74px;
+    height: 74px;
+}
+div.main .dos a{
+    display: block;
+    padding: 20% 0;
+}
+.dos:hover{
+    -webkit-transform: scale(1.3);
+}
+.tres{
+
+    background: #999999;
+    width: 111px;
+    height: 111px;
+    z-index: -1;
+}
+div.main .tres a{
+    display: block;
+    padding: 30% 0;
+}
+.tres:hover{
+    -webkit-transform: scale(.9);
+}
+.cinco{
+
+    background: #ff9400;
+    width: 185px;
+    height: 185px;
+    position: absolute;
+    bottom: 0;
+    right: 291px;
+    -webkit-transform-origin: top right;
+
+}
+div.main .cinco a{
+    display: block;
+    padding: 20% 0;
+}
+.cinco:hover{
+    -webkit-transform: rotate(25deg);
+}
+.ocho{
+
+    background: #00cccc;
+    width: 291px;
+    height: 296px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+
+}
+.ocho:hover{
+    -webkit-transform: translate(0, 20%);
+}
+.trece{
+    background: #FD4F4D;
+    width: 476px;
+    height: 476px;
+}
+.trece:hover{
+    -webkit-transform: translate(15%,0);
+}
+.veintiuno{
+    background: #0099cc;
+    width: 777px;
+    height: 772px;
+}
+.veintiuno:hover{
+    -webkit-transform: translate(0,10%);
+}
+
+/*Templates Body*/  
+body.templates{
+    background-attachment: fixed;
+}
+
+body.templates div.serie{
+    opacity: 0.8;
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+   
+}
+
+body.templates div.serie:hover{
+    opacity: 1;
+    -webkit-transform: none;
+    -webkit-transform: scale(1.1);
+}
+
+body.templates div.serie a{
+    font: 2.5em/3 'champagne', sans-serif;
+    line-height: 1100%;
+    padding: 10%;
+    padding-bottom: 40%;
+    padding-top: 40%;
+   
+}

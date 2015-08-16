@@ -214,7 +214,7 @@
     animation-delay: 30s; 
 }
 
-/* Show at least something when animations not supported */
+
 .no-cssanimations .cb-slideshow li span{
 	opacity: 1;
 }

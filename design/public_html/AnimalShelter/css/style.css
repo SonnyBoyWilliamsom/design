@@ -1,17 +1,52 @@
 /*====FONTS=============================================================================*/
 @import url(http://fonts.googleapis.com/css?family=Poiret+One|Lobster);
 
+/*====ANIMATION=========================================================================*/
+@keyframes circles{
+    0%{-webkit-transform: rotate(0deg)}
+
+    100%{-webkit-transform: rotate(360deg)}
+}
+
+/*====GENERAL===========================================================================*/
 *{margin: 0; padding: 0; box-sizing: border-box;}
-html{height: 100%}
+html{height: 100%;}
 body{height: 100%; font: 1.5em/2 sans-serif;}
 a{text-decoration: none; color: tomato;}
 
-body{ font-family: 'Poiret One', cursive;}
+body{ background: rgba(246,233,217,.2);  font-family: 'Poiret One', cursive;}
 main{height: 100%;}
 a{-webkit-transition: all 0.4s;}
+@font-face{
+    font-family: "fontello";
+    src: url('font_icon/fontello.ttf') format("truetype"),
+        url('font_icon/fontello.woff') format("woff"),
+        url('font_icon/fontello.eot') format("embedded-opentype"),
+        url('font_icon/fontello.svg') format("svg");
+}
+
+/*TITLES ===============================================================================*/
+section{
+    text-shadow: 1px 1px 1px #5DB5AA;
+}
+section h3{ 
+    font-size: 1.5em;
+    color: #5DB5AA;
+    -webkit-transition: all 1s;
+}
+section h3 span{
+    font-family: 'Lobster', cursive;
+    font-size: 1.2em;
+    color: #F2907B;
+}
+span.dog{
+    font-size: 1em;
+    color: #5DB5AA;
+}
 /*====HEADER============================================================================*/
+/*Included footer logo */
 header{background: #F6E9D9;}
-header div.headerLogo a{
+header div.headerLogo a, footer div.col.doce div.footerLogo a{
     display: block;
     width: 200px;
     height: 180px;
@@ -44,7 +79,7 @@ header nav ul li a{
     padding-left: 50px;
     padding-right: 50px;
     color: #5DB5AA;
-     text-shadow: 1px 1px 5px #cdcdcd;
+    text-shadow: 1px 1px 5px #cdcdcd;
 }
 header nav ul li a:hover{
     background: #5DB5AA;
@@ -56,9 +91,9 @@ header nav ul li a:hover{
 
 div.mainSlider{
     background: url(../img/animals.jpg) fixed;
-    background-position: 0px 259px;
+    background-position: 0px 183px;
     background-size: cover;
-    height: 66%;
+    height: 75%;
     width: 100%;
     display: table;
 }
@@ -76,36 +111,39 @@ div.mainSlider div.mainSliderIn h2{
     color:#5DB5AA;
     text-shadow: 1px 1px 2px #000;
 }
+div.mainSlider div.mainSliderIn h2 span{
+    color: #F2907B;
+}
 div.mainSlider div.mainSliderIn p{
     font-size: 2em;
-    color: #F2907B;
+    color:#5DB5AA;
     text-shadow: 1px 1px 5px #5DB5AA;
 }
 div.mainSlider div.mainSliderIn p span{
     font-family: 'Lobster', cursive;
+    color: #F2907B;
     text-shadow: none;
 }
 /*====CONTENIDO===========================================*/
-div.contenido{//Cada seccion esta contenida en este div, de tal manera que se consigue el background de un color y el contenido de la sección en un tamaño fijo
-    margin: 0 auto;
-    overflow: hidden;
-   
+div.contenido{//Cada seccion esta contenida en este div, de tal manera que se consigue el background de un color y el contenido de la secciÃƒÂ³n en un tamaÃƒÂ±o fijo
+              margin: 0 auto;
+              overflow: hidden;
+
 }
 div.contenido:nth-child(4){
-    background: url(../img/patternBkGRND.jpg);
+/*    background: url(../img/patternBkGRND);*/
+background: #F6E9D9;
 }
-section div{
-    overflow: hidden;
-    margin-top: 5px;
-}
+
 section{
-    width: 955px;
-    margin: 0 auto;
+    width: 960px;
+    margin: 20px auto;
+    overflow: hidden;
 }
 
 /*====CELDAS=WIDTH:960px, margin:5px, 12columns===========================*/
 div.col{
-    background: red;
+
     height: 200px;
     float: left;
 }
@@ -134,14 +172,189 @@ div.col:not(:first-child) {margin-left: 5px;}
 
 
 /*====SECTION-NUESTRAS MASCOTAS===========================================*/
+section#nuestrasMascotas div.historias {
+    overflow: hidden;
+    margin-top: 5px;
+    height: 205px;
+    -webkit-transition: all 1s;
+}
+section#nuestrasMascotas div.historias div.col{
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #5DB5AA;
+    -webkit-transition: all 1s;
+}
+.huno div.col:first-child{background: url(../img/lancelot.jpg) no-repeat center; background-size: cover;}
+.huno div.col:nth-child(2){background: url(../img/doggy.jpg) no-repeat center; background-size: cover;}
+.huno div.col:nth-child(3){background: url(../img/gerry.jpg) no-repeat center; background-size: cover;}
+.hdos div.col:nth-child(1){background: url(../img/garfield.jpg) no-repeat center; background-size: cover;}
+.hdos div.col:nth-child(2){background: url(../img/doggy_dog.jpg) no-repeat center; background-size: cover;}
+.hdos div.col:nth-child(3){background: url(../img/billie.jpeg) no-repeat center; background-size: cover;}
+section#nuestrasMascotas div.historias div.col h4{
+    background: rgba(93,181,170,.4);
+    height: 100%;
+    position: relative;
+    -webkit-perspective:300px;
+    -webkit-transition: all 1s;
+}
+section#nuestrasMascotas div.historias div.col h4:hover{
+    background: none;
+    -webkit-transition: all 1s;
+}
 
+section#nuestrasMascotas div.historias div.col h4 a{
+    text-shadow: 1px 1px 1px  #000;
+    font-size: 1.5em;
+    width: 100%;
+    height: 100%;
+    color: #F2907B;
+    display: inline-block;
+    padding:20px;
+    -webkit-transition: all 0.5s;
+}
+section#nuestrasMascotas div.historias div.col h4 a:hover{
+    -webkit-transform: rotateZ(360deg);
+}
+section#nuestrasMascotas div.historias div.col h4 a:after{ 
+    font-family: 'fontello', sans-serif;
+    display: block;
+    text-align: center;
+    opacity: 0;
+    content: "\E808";
+    color: #5DB5AA;
+    -webkit-transition: all 0.5s;
+
+}
+section#nuestrasMascotas div.historias div.col h4:hover > a:after{
+    text-shadow: 1px 1px 5px  #fff;
+    opacity: 1;
+}
+
+/*====SECTION-MASCOTAS TERAPÃƒâ€°UTICAS======================================================*/
+section#otraAyuda{
+    height: 480px;
+    overflow: hidden;
+}
+section#otraAyuda div.mascotasTerapia{
+    height: 85%;
+    overflow: hidden;
+}
+section#otraAyuda div.mascotasTerapia div.rotate, section#otraAyuda div.mascotasTerapia div.rotate div.col{
+    height: 100%;
+}
+
+section#otraAyuda div.mascotasTerapia div.rotate div.col a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 350px;
+    display: inline-block;
+    position: relative;
+    -webkit-transition: all 0.5s;
+}
+
+section#otraAyuda div.mascotasTerapia div.rotate div.col a:before{
+    font-family: 'fontello', sans-serif;
+    font-size: 2em;
+    color: #5DB5AA;
+    -webkit-transition: all 0.5s;
+}
+section#otraAyuda div.mascotasTerapia div.rotate div.col:nth-child(1) a:before{content: "\E805"; }
+section#otraAyuda div.mascotasTerapia div.rotate div.col:nth-child(2) a:before{ content: "\E807";}
+section#otraAyuda div.mascotasTerapia div.rotate div.col:nth-child(3) a:before{content: "\E806";}
+section#otraAyuda div.mascotasTerapia div.rotate div.col a:after{  display: none;  -webkit-transition: all 0.5s; font-size: 2em;}
+section#otraAyuda div.mascotasTerapia div.rotate div.col:nth-child(1) a:after{content: "AWARDS";}
+section#otraAyuda div.mascotasTerapia div.rotate div.col:nth-child(2) a:after{ content: "MEDIA";}
+section#otraAyuda div.mascotasTerapia div.rotate div.col:nth-child(3) a:after{content: "SHARE";}
+section#otraAyuda div.mascotasTerapia div.rotate div.col:hover a:after{   display: inline-block; }
+section#otraAyuda div.mascotasTerapia div.rotate div.col:hover a:before{   display: none;  }
+
+section#otraAyuda div.mascotasTerapia div.rotateAnimation{
+    position: relative;
+}
+section#otraAyuda div.mascotasTerapia div.rotateAnimation img{
+    position: absolute;
+    width: 43%;
+    top: -25px;
+    right: 5%;
+    -webkit-transform: rotate(0deg);
+    -webkit-transform-origin: center;
+    -webkit-animation: circles 20s linear 0s infinite; 
+}
+section#otraAyuda div.mascotasTerapia div.rotate div.col{
+    position: relative;
+    z-index: 1;
+}
 
 
 /*====FOOTER==============================================================*/
 footer{
-    background: url(../img/patternBkGRND.jpg);
+/*    background: url(../img/patternBkGRND.jpg);*/
+background: #F6E9D9;
     overflow: hidden;
     margin-top: 5px;
 }
 
- 
+footer div.col.doce div.footerLogo a{
+    width: 100px;
+    height: 90px;
+    background-size: 491px;
+    background-position: -30px -30px;
+}
+footer div.col.doce h2{
+    text-align: center;
+}
+footer div.col.doce h2 a{
+    font-family: 'Lobster', sans-serif;
+    text-shadow: none;
+     color: #F2907B;
+}
+footer div.col.doce h2 a span{
+    color: #5DB5AA;
+}
+footer div.col.doce nav.footerNav{
+    font-size: 0.9em;
+    text-align:  center;
+    width:50%;
+    margin: 0 auto;
+}
+footer div.col.doce nav.footerNav ul li{
+    display: inline-block;
+}
+footer div.col.doce div.footerLogo nav.footerNav ul li a{
+    background: none;
+}
+    /*Footer Social*/
+    footer section.dogCatSocial div.col.cuatro{
+        text-align: center;
+        height: 90px;
+    }
+    footer section.dogCatSocial div.col.cuatro a:after{
+        font-family: 'fontello', sans-serif;
+        font-size: 2em;
+        color: #5DB5AA;
+    }
+     footer section.dogCatSocial div.col.cuatro a:hover:after{
+        font-family: 'fontello', sans-serif;
+        color:  #F2907B;
+        text-shadow: 1px 1px 1px #F2907B;
+    }
+    
+    footer section.dogCatSocial div.col.cuatro a[href*=facebook]:after{content: "\E801";}
+    footer section.dogCatSocial div.col.cuatro a[href*=twitter]:after{content: "\E802";}
+    footer section.dogCatSocial div.col.cuatro a[href*=pinterest]:after{content: "\E803";}
+    footer section.dogCatSocial div.col.cuatro a[href*=vimeo]:after{content: "\E804";}
+    
+    /*Footer Social*/
+    footer section.extraInfo{
+        text-align: center;
+        font-size: 0.8em;
+    }
+    footer section.extraInfo p{
+        display: inline-block;
+    }
+    footer section.extraInfo div.company a:after{
+        font-family: 'fontello', sans-serif;
+        color: #5DB5AA;
+        text-shadow: none;
+        content: "\E809";
+    }
