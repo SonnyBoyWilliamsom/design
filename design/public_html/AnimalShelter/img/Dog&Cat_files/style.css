@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Poiret+One|Lobster);
 
 /*====ANIMATION=========================================================================*/
-@-webkit-keyframes circles{
+@keyframes circles{
     0%{-webkit-transform: rotate(0deg)}
 
     100%{-webkit-transform: rotate(360deg)}
@@ -11,7 +11,7 @@
 /*====GENERAL===========================================================================*/
 *{margin: 0; padding: 0; box-sizing: border-box;}
 html{height: 100%;}
-body{height: 100%; font: 1.5em/2 sans-serif;  color: #F2907B;}
+body{height: 100%; font: 1.5em/2 sans-serif;}
 a{text-decoration: none; color: tomato;}
 
 body{ background: rgba(246,233,217,.2);  font-family: 'Poiret One', cursive;}
@@ -24,20 +24,7 @@ a{-webkit-transition: all 0.4s;}
         url('font_icon/fontello.eot') format("embedded-opentype"),
         url('font_icon/fontello.svg') format("svg");
 }
-form input{
-    background: /*url(../img/dog98.png)*/ rgba(93,181,170,.4);
-    background-size: contain;
-    font-family: 'Poiret One', cursive;
-    font-size: 0.8em;
-    font-weight: bold;
-    color:  #5DB5AA;
-    padding: 5px;
-    border-radius: 5px;
-    border: 0;
-    outline: none;
-    letter-spacing: 1px;
-    width: 100%;
-}
+
 /*TITLES ===============================================================================*/
 section{
     text-shadow: 1px 1px 1px #5DB5AA;
@@ -47,7 +34,7 @@ section h3{
     color: #5DB5AA;
     -webkit-transition: all 1s;
 }
-section h3 span:nth-child(2){
+section h3 span{
     font-family: 'Lobster', cursive;
     font-size: 1.2em;
     color: #F2907B;
@@ -61,10 +48,11 @@ span.dog{
 header{background: #F6E9D9;}
 header div.headerLogo a, footer div.col.doce div.footerLogo a{
     display: block;
-    width: 160px;
+    width: 200px;
     height: 180px;
-    background: url(../img/MAIN_LOGO.png) no-repeat center;
-    background-size: contain;
+    background: url(../img/02.jpg) no-repeat center;
+    background-size: 846px;
+    background-position: -51px -65px;
     text-align: right;
     margin: 0 auto;
     vertical-align: baseline;
@@ -107,7 +95,7 @@ header div.headerLogo div.firstSocial{
 }
 header div.headerLogo div.firstSocial a{
     display: inline;
-    background: none;
+   
 }
 header div.headerLogo div.firstSocial a:after{
     font-family: 'fontello', sans-serif;
@@ -124,24 +112,34 @@ header div.headerLogo div.firstSocial a[href*=vimeo]:after{content: "\E804";}
 /*====SEARCH BOX=======================================================================*/
 header div.headerLogo div.search{position: relative;}
 header div.headerLogo div.search div.searchBox{
-    -webkit-transition: all 0.5s    ;
     position: absolute;
     top: 4px;
     right: 0;
 }
-
+header div.headerLogo div.search div.searchBox form input{
+    background: url(font_icon/) rgba(93,181,170,.4);
+    font-family: 'Poiret One', cursive;
+    font-size: 0.8em;
+    font-weight: bold;
+    color:  #5DB5AA;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+}
 /*====MAIN SLIDER=======================================================================*/
 
 div.mainSlider{
-    background: url(../img/animals_background.png) fixed;
-
+    background: url(../img/animals.jpg) fixed;
+    background-position: 0px 183px;
     background-size: cover;
     height: 75%;
     width: 100%;
     display: table;
 }
 div.mainSlider div.mainSliderIn {
-
+    background: rgba(255,255,255, 0.8);
+    background-position: 0px 260px;
     height: 100%;
     text-align: center;
     display: table-cell;
@@ -168,14 +166,14 @@ div.mainSlider div.mainSliderIn p span{
 }
 /*====CONTENIDO===========================================*/
 div.contenido{//Cada seccion esta contenida en este div, de tal manera que se consigue el background de un color y el contenido de la seccion en un tamano fijo
-
-              margin: 0 auto;
-              overflow: hidden;
-              background: #F6E9D9;
+    
+    margin: 0 auto;
+    overflow: hidden;
+    background: #F6E9D9;
 }
-div.contenido:nth-child(2n+4){
+div.contenido:nth-child(4){
     /*    background: url(../img/patternBkGRND);*/
-    background: rgba(246,233,217,.1);
+   background: rgba(246,233,217,.1);
 }
 
 section{
@@ -208,7 +206,7 @@ div.col:not(:first-child) {margin-left: 5px;}
     width: 475px;
 }
 .doce{
-    width: 960px;
+    width: 955px;
     margin:  0 auto;
 }
 
@@ -253,7 +251,6 @@ section#nuestrasMascotas div.historias div.col h4 a{
     display: inline-block;
     padding:20px;
     -webkit-transition: all 0.5s;
-    /* border-radius: 20px; */
 }
 section#nuestrasMascotas div.historias div.col h4 a:hover{
     -webkit-transform: rotateZ(360deg);
@@ -266,15 +263,14 @@ section#nuestrasMascotas div.historias div.col h4 a:after{
     content: "\E808";
     color: #5DB5AA;
     -webkit-transition: all 0.5s;
-    position: relative;
-    top: -10%;
+
 }
 section#nuestrasMascotas div.historias div.col h4:hover > a:after{
     text-shadow: 1px 1px 5px  #fff;
     opacity: 1;
 }
 
-/*====SECTION-MASCOTAS TERAPEUTICAS======================================================*/
+/*====SECTION-MASCOTAS TERAPÃƒÆ’Ã¢â‚¬Â°UTICAS======================================================*/
 section#otraAyuda{
     height: 480px;
     overflow: hidden;
@@ -282,14 +278,11 @@ section#otraAyuda{
 section#otraAyuda div.mascotasTerapia{
     height: 85%;
     overflow: hidden;
-
 }
-section#otraAyuda div.mascotasTerapia div, section#otraAyuda div.mascotasTerapia div.rotate div.col{
+section#otraAyuda div.mascotasTerapia div.rotate, section#otraAyuda div.mascotasTerapia div.rotate div.col{
     height: 100%;
 }
-section#otraAyuda div.mascotasTerapia div.rotate{
-    text-align: center;
-}
+
 section#otraAyuda div.mascotasTerapia div.rotate div.col a{
     width: 100%;
     height: 100%;
@@ -318,11 +311,10 @@ section#otraAyuda div.mascotasTerapia div.rotate div.col:hover a:before{   displ
 
 section#otraAyuda div.mascotasTerapia div.rotateAnimation{
     position: relative;
-    overflow: visible;
 }
 section#otraAyuda div.mascotasTerapia div.rotateAnimation img{
     position: absolute;
-    width: 44%;
+    width: 43%;
     top: -25px;
     right: 5%;
     -webkit-transform: rotate(0deg);
@@ -333,25 +325,22 @@ section#otraAyuda div.mascotasTerapia div.rotate div.col{
     position: relative;
     z-index: 1;
 }
-section#otraAyuda div.mascotasTerapia div.moreInfoAyuda{
-    display: none;
-}
 
 
-/*====FOOTER============================================================================*/
+/*====FOOTER==============================================================*/
 footer{
     /*    background: url(../img/patternBkGRND.jpg);*/
     background: rgba(246,233,217,.1);
     overflow: hidden;
-
+    margin-top: 5px;
 }
-footer a{color: #F2907B;}
+
 footer div.col.doce div.footerLogo a{
     width: 100px;
     height: 90px;
-
+    background-size: 491px;
+    background-position: -30px -30px;
 }
-footer div.col.doce{height: 130px;}
 footer div.col.doce h2{
     text-align: center;
 }
@@ -366,7 +355,7 @@ footer div.col.doce h2 a span{
 footer div.col.doce nav.footerNav{
     font-size: 0.9em;
     text-align:  center;
-    width:90%;
+    width:50%;
     margin: 0 auto;
 }
 footer div.col.doce nav.footerNav ul li{
@@ -374,7 +363,6 @@ footer div.col.doce nav.footerNav ul li{
 }
 footer div.col.doce div.footerLogo nav.footerNav ul li a{
     background: none;
-
 }
 /*Footer Social*/
 footer section.dogCatSocial div.col.cuatro{
@@ -413,180 +401,3 @@ footer section.extraInfo div.company a:after{
     text-shadow: none;
     content: "\E809";
 }
-
-
-/*====ADOPT====================================================================================================================================================================================================================================================================================================================================================================================================================*/
-
-main#adopt div.contenido{
-    background: url(../img/animals_background.png) fixed;
-    background-position: 0px 183px;
-    background-size: cover;
-}
-main#adopt section#nuestrasMascotas div.historias div.col h4 a{
-    font-family: 'Lobster', cursive;
-    font-size: 2em;
-    /* margin-bottom: 5px; */
-}
-
-main#adopt section#nuestrasMascotas div.historias div.col h4 a:after{ 
-    position: relative;
-    top: -40%;
-}
-main#adopt section#nuestrasMascotas div.historias a:hover{
-    -webkit-transform: none;
-}
-main#adopt div.contenido:nth-child(2n+3){
-    background:#F6E9D9;
-
-}
-main#adopt div.contenido section#comentarios{
-    position:relative;
-}
-main#adopt div.contenido section#comentarios div.adoptersInfo{
-    width: 200px;
-    height: 230px;
-    position: absolute;
-    cursor: context-menu;
-    -webkit-transition: all 0.5s;
-}
-/*Dialogos*/
-main#adopt div.contenido section#comentarios h3{
-    display: none;
-}
-
-main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(2){top: 10%;right: 13%;}
-main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(3){top: 28%;left: 5%;}
-main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(4){top: 34%;right: 33%;}
-main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(5){ /* width: 150px; */ bottom: 12%;right: 5%;}
-main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(6){bottom: 12%;left: 5%;}
-
-main#adopt div.contenido section#comentarios div.adoptersInfo div.dialog{
-    width: 230px;
-    height: 150px;
-    text-align: center; 
-    position: absolute;
-    opacity: 1;
-    color: #fff;
-    -webkit-transition: all 0.5s;
-}
-
-main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(2) div.dialog:first-child{
-    background: #8657A2; bottom: 0%;left: -140%; 
-    width: 240px; height: 120px; border-radius: 20px;}
-main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(3) div.dialog:first-child{background: #F2907B; bottom: -50%;right: -85%;width: 235px; height: 140px; border-radius: 100%;}
-main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(4) div.dialog:first-child{
-    background: #59B079;bottom: 5%;right: -122%; width: 230px; height: 120px; border-radius: 20px;}
-main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(5) div.dialog:first-child{
-    background: #ff9966;top: -35%;
-    left: -85%; width: 210px; height: 130px; border-radius: 100%;}
-main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(6) div.dialog:first-child{
-    background: #6699ff;bottom: 15%;right: -150%; width: 230px; height: 120px; border-radius: 20px;}
-main#adopt section#comentarios img{
-    width: 100%;
-}
-
-
-main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(2):hover > div.dialog{opacity: 1; -webkit-transform: rotate(360deg)}
-main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(3):hover > div.dialog{opacity: 1; -webkit-transform: rotateX(360deg)}
-main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(4):hover > div.dialog{opacity: 1; -webkit-transform: rotateY(360deg)}
-main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(5):hover > div.dialog{opacity: 1; -webkit-transform: rotate(360deg)}
-main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(6):hover > div.dialog{opacity: 1; -webkit-transform: rotateX(360deg)}
-main#adopt div.contenido section#comentarios div.adoptersInfo div.dialog h2{
-    font-family: 'Lobster', cursive;
-    font-size: 1.2em;
-    line-height: 45px;
-}
-main#adopt div.contenido section#comentarios div.adoptersInfo div.dialog p{
-    font-size: 0.8em;
-    letter-spacing: 1px;
-    line-height: 20px;
-}
-/*Boton MÃ¡s InformaciÃ³n*/
-main#adopt div.contenido div.moreInfoAdopt{
-    text-align: center;
-    height: 52px;
-}
-main#adopt div.contenido div.moreInfoAdopt a{
-    background: #F2907B;
-    display: block;
-    border-radius: 15px;
-    color: #fff;
-    box-shadow: 0px 1px 1px #666666;
-}
-main#adopt div.contenido div.moreInfoAdopt a:hover{
-    background: #5DB5AA;
-    box-shadow: inset 0px 0px 5px #fff;
-    box-shadow: 0px 1px 5px #666666;
-    border: none;
-
-}
-main#adopt  footer{
-    /*    background: url(../img/patternBkGRND.jpg);*/
-    background: #FBF7F3;
-}
-main#adopt footer section.extraInfo{
-    background: #F6E9D9;
-}
-
-/*====HELP US====================================================================================================================================================================================================================================================================================================================================================================================================================*/
-
-
-main#helpus div.contenido:nth-child(2n){
-    /*    background: url(../img/patternBkGRND.jpg);*/
-    background: rgba(246,233,217,.1);
-}
-main#helpus footer{background: #F6E9D9;}
-main#helpus footer section.extraInfo{
-    background: #FBF7F3;
-
-}
-
-/*====CONTACT====================================================================================================================================================================================================================================================================================================================================================================================================================*/
-main#contact div.contenido{
-    height: 75%;
-}
-main#contact div.contenido:nth-child(2){
-    height: 65%;
-    width: 100%;
-    background: url(../img/animals_background.png) fixed;
-    background-position: 0px 183px;
-    background-size: cover;
-    display: table;
-}
-main#contact div.contenido section#comentarios1, main#contact div.contenido section#comentarios1{
-    overflow: visible;
-    color: #F2907B
-}
-main#contact div.contenido section#comentarios1, main#contact div.contenido section#comentarios1 h3{
-    text-align: center;
-}
-main#contact div.contenido section#comentarios1, main#contact div.contenido section#comentarios1 div.col.doce{
-    height: 80%;
-}
-main#contact form[id=contact]{
-    padding-top: 4vh;
-}
-main#contact form input{
-    width: 100%;
-}
-main#contact form input[type=submit]{
-    background: /*url(../img/dog98.png)*/ rgba(242,144,123,.4);
-    cursor: pointer;
-}
-main#contact div.contenido section#comentarios div.col.seis{
-    padding-top: 30px;
-    height: 90%;
-    display: table;
-}
-main#contact div.contenido section#comentarios div.col.seis div.address{
-    display: table-cell;
-    vertical-align: middle;
-}
-div#map {
-    background: #5DB5AA;
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-
-}
-

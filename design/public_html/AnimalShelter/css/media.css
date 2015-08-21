@@ -1,0 +1,134 @@
+@media (max-width: 960px){
+
+    div.col{
+        width: 100%;
+        height: 0;
+        height: auto;
+
+    }
+    div.col:not(:first-child){
+        margin-left: 0;
+    }
+  
+    /*TITLES ===============================================================================*/
+    section h3{ font-size: 1.3em;}
+    span.dog{font-size: 1em;}
+    section h3 span:nth-child(1){
+        font-family: 'Lobster', cursive;
+        font-size: 1.2em;
+        color: #F2907B;
+    }
+    section h3 span:nth-child(2){
+        display: none;
+    }
+    /*====HEADER============================================================================*/
+    header div.headerLogo a{
+        width: 130px;
+        height: 130px;
+    }
+    header div.headerLogo, header div.headerLogo h1{width: 90%}
+    header div.headerLogo h1{display: none;}
+    header nav ul li a{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /*Search box*/
+    header div.headerLogo div.search div.searchBox{
+        top: -125px;
+        left: 0;
+        width: 100px;
+
+    }
+    /*====CONTENIDO============================================================================*/
+    /*    div.contenido{overflow: visible;}*/
+    section{width: 90%;}
+
+    /*====SECTION-NUESTRAS MASCOTAS===========================================*/
+    section#nuestrasMascotas div.historias div.col h4{border-radius: 20px;/* margin-bottom: 5px; */}
+    section#nuestrasMascotas div.historias {
+        overflow: visible;
+    }
+    section#nuestrasMascotas div.historias div.col{margin-left: 0;margin-bottom: 15px;}
+    section#nuestrasMascotas div.historias div.col.cuatro{
+        margin: 5px 0;
+        border-radius: 20px;
+    }
+    section#nuestrasMascotas div.historias div.col h4 a:hover{
+        -webkit-transform: rotateX(360deg);
+    }
+    /*====SECTION-MASCOTAS TERAPEUTICAS======================================================*/
+    section#otraAyuda{height: 0; height: auto;}
+    section#otraAyuda div.mascotasTerapia div.rotate{display: none;}
+    section#otraAyuda div.mascotasTerapia div.rotateAnimation img{
+        right: 0%;
+        width: 100%;
+        z-index: -1;
+    }
+    section#otraAyuda div.mascotasTerapia div.moreInfoAyuda{
+        display: block;
+        text-align: center;
+    }
+    section#otraAyuda div.mascotasTerapia div.col p span{display: none;}
+    section#otraAyuda div.mascotasTerapia div.moreInfoAyuda a{
+        background: #F2907B;
+        width: 100%;
+        height: 52px;
+        display: inline-block;
+        border-radius: 15px;
+        color: #fff;
+        box-shadow: 0px 1px 1px #666666;
+    }
+    section#otraAyuda div.mascotasTerapia div.moreInfoAyuda a:hover{
+        background: #5DB5AA;
+        box-shadow: inset 0px 0px 5px #fff;
+        box-shadow: 0px 1px 5px #666666;
+        border: none;
+    }
+
+    /*====FOOTER==========================================================================*/
+    footer section.dogCatSocial div.col.cuatro:nth-child(2n+1){
+        display: none;
+    }
+    footer section{
+        margin: 0;
+        width: 100%;
+    }
+
+
+    /*Diálogos*/
+   
+    main#adopt div.contenido section#comentarios{
+       background: url(../img/adoptInfo.jpg) no-repeat center;
+        background-size: contain;
+    }
+    main#adopt section#comentarios img{
+        display: none;
+    }
+    main#adopt div.contenido section#comentarios div.adoptersInfo{
+/*        background: rgba(242,144,123,0.8);*/
+        position: initial;
+        width: 100%;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    main#adopt div.contenido section#comentarios div.adoptersInfo div.dialog{
+        position: inherit;width: 100%; height: 100%; opacity: 0;
+    }
+main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(2):hover > div.dialog:first-child,main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(3):hover > div.dialog:first-child,main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(4):hover > div.dialog:first-child,main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(5):hover > div.dialog:first-child,main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(6):hover > div.dialog:first-child{
+    border-radius: 20px; width: 100%; height: 100%; -webkit-transform: rotateX(360deg);}
+
+
+/*CONTACT*/
+main#contact div.contenido{
+    height: 60%;
+}
+main#contact div.contenido section#comentarios, main#contact div.contenido section#comentarios div.col.doce{
+    height: 90%;
+}
+main#contact div.contenido section#comentarios div.col.seis{
+    height: 45%;
+}
+
+
+}
