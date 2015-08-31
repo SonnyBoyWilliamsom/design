@@ -86,12 +86,14 @@
         box-shadow: 0px 1px 5px #666666;
         border: none;
     }
-    /*============================================*/
+    /*=====CONTACT======================================================================*/
     main#contact div.contenido section#comentarios div.col.seis div.address p:before{
     display: inline-block;
     width: 75px;
+   
 }
-    /*====FOOTER==========================================================================*/
+
+    /*====FOOTER=========================================================================*/
     footer section.dogCatSocial div.col.cuatro:nth-child(2n+1){
         display: none;
     }
@@ -99,6 +101,7 @@
         margin: 0;
         width: 100%;
     }
+    main#home footer div.goTop{top:-30px;}
 
 
     /*Dialogos*/
@@ -234,7 +237,10 @@
 }
 
 @media (max-width: 360px){/*===================================================================================================================================================================================================================================================================================================================================================================================================================*/
-
+  main#contact div.contenido section#comentarios div.col.seis div.address p:before{display: none;}
+    main#contact div.contenido section#comentarios div.col.seis div.address p{
+    font-size: 0.8em;
+}
     div.mainSlider div.mainSliderIn h2{
         font-size: 3em;
     }

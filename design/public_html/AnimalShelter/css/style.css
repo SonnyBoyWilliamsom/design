@@ -44,7 +44,7 @@ form input, textarea{
     letter-spacing: 1px;
     width: 100%;
 }
- textarea{margin-top: 12px;width: 99%;}
+textarea{margin-top: 12px;width: 99%;}
 /*TITLES ===============================================================================*/
 div.contenido h3{width: 960px; margin: 0 auto;text-shadow: 1px 1px 1px #5DB5AA;}
 section{
@@ -357,7 +357,7 @@ span.mascotasHidden{
     font-family: 'Poiret One', cursive; font-size: 1em;
 }
 /*TESTIMONIALS==========================================================================*/
- main#home div.contenido section#comentarios div.col.doce p:before{
+main#home div.contenido section#comentarios div.col.doce p:before{
     font-family: 'fontello', sans-serif;
     font-size: 1em;
     color: #5DB5AA;
@@ -365,18 +365,43 @@ span.mascotasHidden{
     content: "\E812";
 }
 main#home div.contenido section#comentarios div.col.doce span{
-     font-family: 'Poiret One', cursive;
-     font-size: 1.1em;
-     float: right;
-      color: #5DB5AA;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.1em;
+    float: right;
+    color: #5DB5AA;
 }
 /*====FOOTER============================================================================*/
 footer{
     /*    background: url(../img/patternBkGRND.jpg);*/
     background: rgba(246,233,217,.1);
-    overflow: hidden;
+    /* overflow: hidden; */
+    position: relative;
 
 }
+footer div.goTop{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -65px; 
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: url(../img/footprints2.png) no-repeat center;
+    background-size: 80px;
+    text-align: center;
+    padding-top: 15px;
+    z-index: 4;
+}
+footer div.goTop a:before{
+    font-family: 'fontello', sans-serif;
+    font-size: 1.5em;
+    color:  #fff;
+    content: "\E815";
+
+}
+main#adopt footer div.goTop, main#helpus footer div.goTop{ top: -36px; }
+main#contact footer div.goTop{ top: -61px; }
+footer section.dogCatFooter{padding-top: 50px;}
 footer a{color: #F2907B;}
 footer div.col.doce div.footerLogo a{
     width: 100px;
@@ -492,12 +517,12 @@ main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(4){top: 
 main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(5){ /* width: 150px; */ bottom: 12%;right: 5%;}
 main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(6){bottom: 12%;left: 5%;}
 main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(7){
-     width: 250px;
+    width: 250px;
     height: 90px;
     background: #F2907B;;
     top: 8%;
     left: 12%;
-   
+
 }
 main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(7) span{
     display: inline-block;
@@ -505,7 +530,7 @@ main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(7) span{
     padding-top: 15px;
     color:  #fff;
     text-shadow: 1px 1px 2px #5DB5AA;
-    
+
 }
 main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(7):before{
     content: "";
@@ -526,7 +551,7 @@ main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(7):after
     position: absolute;
     right: -28%;
     top: -40%;
-   
+
 }
 main#adopt div.contenido section#comentarios div.adoptersInfo div.dialog{
     width: 230px;
@@ -582,7 +607,7 @@ main#adopt div.contenido div.moreInfoAdopt a{
     border-radius: 15px;
     color: #fff;
     box-shadow: 0px 1px 1px #666666;
-    
+
 }
 main#adopt div.contenido div.moreInfoAdopt a:hover{
     background: #5DB5AA;
@@ -608,11 +633,11 @@ main#helpus div.contenido:nth-child(2){
 }
 main#helpus div.contenido:nth-child(3){
     background: url(../img/2DOG.png) #F6E9D9 no-repeat bottom right;
-     background-size: 18%;
+    background-size: 18%;
 }
 main#helpus div.contenido:nth-child(4){
     background: url(../img/3DOG.png) rgba(246,233,217,.1) no-repeat bottom left;
-     background-size: 21%;
+    background-size: 21%;
 }
 main#helpus footer{background: #F6E9D9;}
 main#helpus footer section.extraInfo{
@@ -681,11 +706,11 @@ div#map {
     width: 100%;
     height: 100%;
     border-radius: 5px;
-    
+
 }
 main#contact div.contenido section#comentarios div.col.seis{
     position: relative;
-   
+
 }
 main#contact div.contenido section#comentarios div.col.seis div.moreInfoAdopt{
     width: 60%;
@@ -708,7 +733,7 @@ main#contact div.contenido section#comentarios div.col.seis div.moreInfoAdopt a{
     color: #fff;
     box-shadow: 0px 1px 1px #666666;
     position: absolute;
-   -webkit-transition: all 1s;
+    -webkit-transition: all 1s;
 }
 main#contact div.contenido section#comentarios div.col.seis div.moreInfoAdopt a:before{
     font-family: 'fontello', sans-serif;
@@ -716,7 +741,7 @@ main#contact div.contenido section#comentarios div.col.seis div.moreInfoAdopt a:
     content: "\E813";
     color: #fff;
     line-height: 100px;
-    
+
 }
 main#contact div.contenido section#comentarios div.col.seis div.moreInfoAdopt:hover > a{
     opacity: 1;
