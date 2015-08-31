@@ -5,9 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Dog & Cat es un refugio de animales, especializado en perros y gatos, con servicio de adopción, apadrinamiento y mascotas terapéuticas.">
-        <meta name="keywords" content="Dog & Cat es un refugio de animales, especializado en perros y gatos, con servicio de adopción, apadrinamiento y mascotas terapéuticas.">
+        <meta name="keywords" content="mascotas, refugio, gatos, perros, animales, protectora">
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
         <link href="css/media.css" rel="stylesheet" type="text/css"/>
+        <link rel="shortcut icon" href="img/faviconCD.ico" type="image/x-icon" />
+        
+
     </head>
     <body>
         <main id="home">
@@ -30,7 +33,7 @@
                     </div>
                 </div>
 
-                <nav>
+                <nav id="menuResp">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="adopt.html">Adopta</a></li>
@@ -38,6 +41,11 @@
                         <li><a href="contact.html">Contacto</a></li>
                     </ul>
                 </nav>
+                <div id="menuOptions">
+                    <a id="call" href="#menuResp"></a>
+                    <a id="empty" href="#"></a>
+                </div>
+                <div class="searchResp"><a href=""></a></div>
             </header>
             <div class="mainSlider">
                 <div class="mainSliderIn"> 
@@ -48,7 +56,7 @@
             <div class="contenido">
                 <section id="nuestrasMascotas"> 
                     <h3>
-                        Nuestras <span>Mascotas</span> <span> Conoce sus historias</span>
+                        Nuestras <span>Mascotas:</span> <span> Conoce sus historias</span>
                     </h3>
                     <div class="historias huno">
                         <div class="col cuatro"><h4><a href="#">Lancelot</a></h4></div>
@@ -65,12 +73,12 @@
             <div class="contenido">
                 <section id="otraAyuda">
                     <h3>
-                        Mascotas <span>terapéuticas</span><span> Otra manera de ayudar</span>
+                        Mascotas <span>terapéuticas:</span><span> Otra manera de ayudar</span>
                     </h3>
                     <div class="mascotasTerapia">
                         <div class="col seis">  
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span>Ut enim ad mrabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum.</span>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span class="mascotasHidden">Ut enim ad mrabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum.</span>
                             </p>
                         </div>
                         <div class="rotate">
@@ -80,18 +88,18 @@
                             <div class="rotateAnimation">
                                 <picture>
                                     <source srcset="img/MAIN_LOGO.png" media="(max-width: 960px)">
-                                    <img src="img/kids.jpg" alt="kids"/>
+                                    <img src="img/kidsopp2.png" alt="kids"/>
                                 </picture>
                             </div>
                             
                         </div>
-                        <div class="moreInfoAyuda"><a href="#">Más Información</a></div>
+                        <div class="moreInfoAyuda"><a href="https://www.google.es/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=parque+madrid+rio&rflfq=1&rlha=0&tbm=lcl&tbs=lf:1,lf_ui:2&oll=40.3546245201945,-3.657476600000109&ospn=0.11053848749703121,0.2574920654296875&oz=12&fll=40.39937693014139,-3.711571391412456&fspn=0.006904068503395422,0.01609325408935547&fz=17&rlfi=hd:;si:" target="tblank">Más Información</a></div>
                     </div>
                 </section>
             </div>
             <div class="contenido">
                 <section id="comentarios">
-                    <h3>¿Qué piensan de <span><span class="dog">Dog</span>&Cat</span>?</h3>
+                    <h3>¿Qué piensan de <span>Dog<span class="dog">&Cat</span></span>?</h3>
                     <div class="testimonios">
                         <div class="col doce">
                             <p>
@@ -133,10 +141,10 @@
                         
                             <nav class="footerNav">
                                 <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">| Adopta</a></li>
-                                    <li><a href="#">| Ayúdanos</a></li>
-                                    <li><a href="#">| Contacto</a></li>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="adopt.html">| Adopta</a></li>
+                                    <li><a href="helpus.html">| Ayúdanos</a></li>
+                                    <li><a href="contact.html">| Contacto</a></li>
                                 </ul>
                             </nav>
                     </div>
@@ -156,7 +164,7 @@
                      <a href="#">Legal Terms -</a>
                      <a href="#">Adopters info</a>
                      <div class="company">
-                          <a href="#">Phanum Co. </a> 2015.
+                          <a href="http://phanumcreations.co.uk/">Phanum Co. </a> 2015.
                        
                      </div>
                 </section>

@@ -5,13 +5,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
-         <link href="css/media.css" rel="stylesheet" type="text/css"/>
+        <link href="css/media.css" rel="stylesheet" type="text/css"/>
+        <link rel="shortcut icon" href="img/faviconCD.ico" type="image/x-icon" />
         <script src="https://maps.googleapis.com/maps/api/js"></script>
         <script src="js/google_map.js"></script>
     </head>
     <body>
         <main id="contact">
-            <header id="headerTop">
+           <header id="headerTop">
                 <div class="headerLogo">
                     <a href="index.html"></a>
                     <div class="search">
@@ -30,7 +31,7 @@
                     </div>
                 </div>
 
-                <nav>
+                <nav id="menuResp">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="adopt.html">Adopta</a></li>
@@ -38,6 +39,11 @@
                         <li><a href="contact.html">Contacto</a></li>
                     </ul>
                 </nav>
+                <div id="menuOptions">
+                    <a id="call" href="#menuResp"></a>
+                    <a id="empty" href="#"></a>
+                </div>
+               <div class="searchResp"><a href=""></a></div>
             </header>
             <div class="contenido">
                 <section id="comentarios">
@@ -48,8 +54,7 @@
                             <input type="text" name="nombre" placeholder="NOMBRE"/>
                             <input type="text" name="apellidos" placeholder="APELLIDOS"/>
                             <input type="text" name="email" placeholder="EMAIL"/>
-                            <input type="text" name="telefono" placeholder="TELÈFONO"/>
-                            <input type="text" name="mascota" placeholder="MASCOTA PREFERIDA"/>
+                            <textarea rows="10" placeholder="Pregúntanos lo que quieras..."></textarea>
                             <input type="submit" name="nombres" value="ENVIAR"/>
                         </form>
                     </div>
@@ -62,8 +67,8 @@
                     <h3>Ven a <span>Visitarnos</span></h3>
 
                     <div class="col seis">
-                        <div id="map" ></div>
-                        <div id="mapCover" ></div>
+                        <div id="map" > </div>
+                        <div id="mapCover" ><div class="moreInfoAdopt"><a href="https://www.google.es/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=parque+madrid+rio&rflfq=1&rlha=0&tbm=lcl&tbs=lf:1,lf_ui:2&oll=40.3546245201945,-3.657476600000109&ospn=0.11053848749703121,0.2574920654296875&oz=12&fll=40.39937693014139,-3.711571391412456&fspn=0.006904068503395422,0.01609325408935547&fz=17&rlfi=hd:;si:" target="tblank"></a></div></div>
                     </div>
                     <div class="col seis">
                         <div class="address">
@@ -73,7 +78,7 @@
                             
                         </div>
                     </div>
-
+                   
 
                 </section>
             </div>
@@ -89,10 +94,10 @@
                        
                         <nav class="footerNav">
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">| Adopta</a></li>
-                                <li><a href="#">| Ayúdanos</a></li>
-                                <li><a href="#">| Contacto</a></li>
+                               <li><a href="index.html">Home</a></li>
+                                    <li><a href="adopt.html">| Adopta</a></li>
+                                    <li><a href="helpus.html">| Ayúdanos</a></li>
+                                    <li><a href="contact.html">| Contacto</a></li>
                             </ul>
                         </nav>
                     </div>

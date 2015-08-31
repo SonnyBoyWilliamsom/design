@@ -1,5 +1,5 @@
-@media (max-width: 960px){
-
+@media (max-width: 960px){/*===================================================================================================================================================================================================================================================================================================================================================================================================================*/
+   
     div.col{
         width: 100%;
         height: 0;
@@ -9,10 +9,12 @@
     div.col:not(:first-child){
         margin-left: 0;
     }
-  
+
     /*TITLES ===============================================================================*/
-    section h3{ font-size: 1.3em;}
+    section h3,  div.contenido h3{ font-size: 1.3em; width: 100%; }
+    main#adopt div.contenido > h3{width: 90%; margin: 0 auto;}
     span.dog{font-size: 1em;}
+
     section h3 span:nth-child(1){
         font-family: 'Lobster', cursive;
         font-size: 1.2em;
@@ -23,8 +25,8 @@
     }
     /*====HEADER============================================================================*/
     header div.headerLogo a{
-        width: 130px;
-        height: 130px;
+        width: 145px;
+        height: 145px;
     }
     header div.headerLogo, header div.headerLogo h1{width: 90%}
     header div.headerLogo h1{display: none;}
@@ -34,7 +36,7 @@
     }
     /*Search box*/
     header div.headerLogo div.search div.searchBox{
-        top: -125px;
+        top: -138px;
         left: 0;
         width: 100px;
 
@@ -84,7 +86,11 @@
         box-shadow: 0px 1px 5px #666666;
         border: none;
     }
-
+    /*============================================*/
+    main#contact div.contenido section#comentarios div.col.seis div.address p:before{
+    display: inline-block;
+    width: 75px;
+}
     /*====FOOTER==========================================================================*/
     footer section.dogCatSocial div.col.cuatro:nth-child(2n+1){
         display: none;
@@ -95,40 +101,144 @@
     }
 
 
-    /*Diálogos*/
-   
-    main#adopt div.contenido section#comentarios{
-       background: url(../img/adoptInfo.jpg) no-repeat center;
-        background-size: contain;
-    }
+    /*Dialogos*/
+
+    /*
+        main#adopt div.contenido section#comentarios{
+            background: url(../img/adoptInfo.jpg) no-repeat center;
+            background-size: contain;
+        }
+       
+        main#adopt div.contenido section#comentarios div.adoptersInfo{
+                    background: rgba(242,144,123,0.8);
+            position: initial;
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+    
+        main#adopt div.contenido section#comentarios div.adoptersInfo div.dialog{
+            position: inherit;width: 100%; height: 100%; opacity: 0;
+        }
+        main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(2):hover > div.dialog:first-child,main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(3):hover > div.dialog:first-child,main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(4):hover > div.dialog:first-child,main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(5):hover > div.dialog:first-child,main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(6):hover > div.dialog:first-child{border-radius: 20px; width: 100%; height: 100%; -webkit-transform: rotateX(360deg);}*/
     main#adopt section#comentarios img{
         display: none;
     }
     main#adopt div.contenido section#comentarios div.adoptersInfo{
-/*        background: rgba(242,144,123,0.8);*/
-        position: initial;
+        display: none;
+    }
+    /*HELP US*/
+    main#helpus div.contenido:nth-child(2){
+        background: url(../img/1DOG.png) rgba(246,233,217,.1) no-repeat top right;
+        background-size: 200px;
+    }
+    main#helpus div.contenido:nth-child(3){
+        background: url(../img/2DOG.png) #F6E9D9 no-repeat top right;
+        background-size: 200px;
+    }
+    main#helpus div.contenido:nth-child(4){
+        background: url(../img/3DOG.png) rgba(246,233,217,.1) no-repeat top right;
+        background-size: 200px;
+    }
+    main#helpus footer{background: #F6E9D9;}
+
+    /*CONTACT*/
+    main#contact div.contenido{
+        height: 800px;
+    }
+    main#contact div.contenido section#comentarios, main#contact div.contenido section#comentarios div.col.doce{
+      
+        height: 90%;
+    }
+    main#contact div.contenido:nth-child(2){
+       
+
+}
+
+    main#contact div.contenido section#comentarios div.col.seis{
+        height: 45%;
+}
+
+
+}
+@media (max-width: 520px){/*===================================================================================================================================================================================================================================================================================================================================================================================================================*/
+    section  h3{
+        font-size: 1.3em;
+    }
+    header{position: relative;}
+
+
+    header nav{
+        text-align: center;
+        /* margin-top: 50px; */
+
+
+        background: transparent;
+    }
+    header nav ul{display: none;}
+    header nav ul li{
+        display: block;
+    }
+    header nav ul li a{
+        background: rgba(242,144,123,0.2);
+        display: block;
+        margin: 10px
+    }
+    header div.headerLogo div.search div.searchBox{
+        display: none;
+    }
+    header div.searchResp a{
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: -5px;
+    }
+    header div.searchResp a:after{
+        font-family: 'fontello', sans-serif;
+        font-size: 1.5em;
+        color: #5DB5AA;
+        content: "\E80E";
+    }
+    header div#menuOptions a#call, header div#menuOptions a#empty{
+        position: absolute;
+        right: 5%;
+        top: 85px;
+    }
+    header div#menuOptions a#call{display: block;}
+    header div#menuOptions a#call:after{
+        font-family: 'fontello', sans-serif;
+        font-size: 1.5em;
+        color: #5DB5AA;
+        content: "\E80F";
+    }
+    header div#menuOptions a#empty:after{
+        font-family: 'fontello', sans-serif;
+        font-size: 1.5em;
+        color:  #F2907B;;
+        content: "\E811";
+    }
+
+    header div.headerLogo div.firstSocial{
+        left: 0;
+        width: 25px;
+    }
+    header div.headerLogo div.firstSocial a{
+        display: block;
         width: 100%;
-        height: 100px;
-        margin-bottom: 10px;
+        height: 35px;
     }
+    header nav#menuResp:target + div#menuOptions a#empty, header nav#menuResp:target ul{display: block;}
+    header nav#menuResp:target + div#menuOptions a#call{display: none;}
 
-    main#adopt div.contenido section#comentarios div.adoptersInfo div.dialog{
-        position: inherit;width: 100%; height: 100%; opacity: 0;
+
+}
+
+@media (max-width: 360px){/*===================================================================================================================================================================================================================================================================================================================================================================================================================*/
+
+    div.mainSlider div.mainSliderIn h2{
+        font-size: 3em;
     }
-main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(2):hover > div.dialog:first-child,main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(3):hover > div.dialog:first-child,main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(4):hover > div.dialog:first-child,main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(5):hover > div.dialog:first-child,main#adopt div.contenido section#comentarios div.adoptersInfo:nth-child(6):hover > div.dialog:first-child{
-    border-radius: 20px; width: 100%; height: 100%; -webkit-transform: rotateX(360deg);}
-
-
-/*CONTACT*/
-main#contact div.contenido{
-    height: 60%;
-}
-main#contact div.contenido section#comentarios, main#contact div.contenido section#comentarios div.col.doce{
-    height: 90%;
-}
-main#contact div.contenido section#comentarios div.col.seis{
-    height: 45%;
-}
-
-
+    div.mainSlider div.mainSliderIn p{
+        font-size: 1.4em;
+    }
 }
