@@ -103,7 +103,7 @@ header nav ul li a{
 header nav ul li a:hover{
     background: #5DB5AA;
     color:  #F6E9D9;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 0px 1px 5px #5DB5AA;
 }
 /*====FIRST-Social============================================================================*/
